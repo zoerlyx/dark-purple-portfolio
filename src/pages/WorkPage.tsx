@@ -24,16 +24,15 @@ export const WorkPage: React.FC<WorkPageProps> = ({
           <Reveal>
             <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-              <span>INDEX // 02</span>
+              <span>02 // PROJECTS</span>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
-              WORK &amp;
+            <h1 className="font-body font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
+              PROJECTS
               <br />
-              <span className="text-neutral-400">ARCHIVE.</span>
+              <span className="text-neutral-400">&amp; ARCHIVE.</span>
             </h1>
             <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-2xl leading-relaxed">
-              SELECTED CASE STUDIES AND THE COMPLETE PROJECT LIBRARY REPRESENTING SOFTWARE SYSTEMS, BUSINESS INTELLIGENCE, AND EXPERIMENTAL EXPLORATIONS.
-            </p>
+             SELECTED CASE STUDIES AND PROJECTS EXPLORING SOFTWARE ENGINEERING, BUSINESS INTELLIGENCE, DATA ANALYTICS, AND DIGITAL PRODUCT DEVELOPMENT.            </p>
           </Reveal>
         </div>
 
@@ -42,7 +41,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({
           <Reveal>
             <SectionHeading
               title="SELECTED WORK"
-              tag="// 01 &bull; CURRENT IDENTITY"
+              tag="// 01 &bull; CURRENT DICIPLINE FOCUS"
               subtitle="PROJECTS THAT DIRECTLY REFLECT THE CURRENT SOFTWARE ENGINEER & DATA ANALYST POSITIONING."
               align="between"
             />

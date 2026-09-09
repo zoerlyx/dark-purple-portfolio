@@ -43,39 +43,39 @@ return (
       {/* Left Half: Typography (Dibuat Lebih Lebar) */}
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center pointer-events-none px-4 text-center select-none overflow-hidden">
   
-  {/* Container Teks 1: SOFTWARE ENGINEER */}
-  <div className="relative animate-static-glitch">
-    {/* Teks Utama */}
-    <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white/30 uppercase leading-none">
-      SOFTWARE ENGINEER
-    </h1>
-    
-    {/* Overlay Piksel Distraksi */}
-    <h1 
-      aria-hidden="true" 
-      className="absolute inset-0 font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-cyan-400/60 uppercase leading-none animate-static-pixel pointer-events-none"
-    >
-      SOFTWARE ENGINEER
-    </h1>
-  </div>
+        {/* Container Teks 1: SOFTWARE ENGINEER */}
+        <div className="relative animate-static-glitch">
+          {/* Teks Utama */}
+          <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white/30 uppercase leading-none">
+            SOFTWARE ENGINEER
+          </h1>
+          
+          {/* Overlay Piksel Distraksi */}
+          <h1 
+            aria-hidden="true" 
+            className="absolute inset-0 font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-cyan-400/60 uppercase leading-none animate-static-pixel pointer-events-none"
+          >
+            SOFTWARE ENGINEER
+          </h1>
+        </div>
 
-  {/* Container Teks 2: DATA ANALYST */}
-  <div className="relative animate-static-glitch [animation-delay:0.25s] mt-2 md:mt-4">
-    {/* Teks Utama */}
-    <h1 className="font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-purple-400/40 uppercase leading-none">
-      DATA ANALYST
-    </h1>
+        {/* Container Teks 2: DATA ANALYST */}
+        <div className="relative animate-static-glitch [animation-delay:0.25s] mt-2 md:mt-4">
+          {/* Teks Utama */}
+          <h1 className="font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-purple-400/40 uppercase leading-none">
+            DATA ANALYST
+          </h1>
 
-    {/* Overlay Piksel Distraksi */}
-    <h1 
-      aria-hidden="true" 
-      className="absolute inset-0 font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-fuchsia-500/60 uppercase leading-none animate-static-pixel [animation-delay:0.25s] pointer-events-none"
-    >
-      DATA ANALYST
-    </h1>
-  </div>
+          {/* Overlay Piksel Distraksi */}
+          <h1 
+            aria-hidden="true" 
+            className="absolute inset-0 font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-fuchsia-500/60 uppercase leading-none animate-static-pixel [animation-delay:0.25s] pointer-events-none"
+          >
+            DATA ANALYST
+          </h1>
+        </div>
 
-</div>
+      </div>
         
       {/* Right Half: Portrait */}
       {/* LAYER DEPAN: Portrait Foto Berada Tepat di Tengah dengan Animasi Muncul */}
@@ -100,6 +100,7 @@ return (
             </div>
           </Reveal>
         </div>
+    
     </div>
   </div>
 </div>
