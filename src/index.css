@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #050507;
+    --bg-surface: #0a0a0f;
+    --text-primary: #f5f5f7;
+    --text-muted: #8e8e99;
+    --accent-purple: #9d4edd;
+    --accent-glow: rgba(157, 78, 221, 0.15);
+  }
+
+  html {
+    background-color: #050507;
+    color: #f5f5f7;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #050507;
+    color: #f5f5f7;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: rgba(168, 85, 247, 0.3);
+    color: #ffffff;
+  }
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Editorial typography clamps */
+.hero-editorial-title {
+  font-size: clamp(3.2rem, 9.5vw, 11rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+}
+
+.section-editorial-title {
+  font-size: clamp(2.4rem, 6vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+}
+
+/* Subtle editorial film grain overlay */
+.editorial-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Ambient purple atmospheric drift animation */
+@keyframes ambientDriftA {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(25px, -18px) scale(1.06);
+  }
+}
+
+@keyframes ambientDriftB {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-20px, 25px) scale(0.95);
+  }
+}
+
+.animate-ambient-a {
+  animation: ambientDriftA 24s ease-in-out infinite alternate;
+}
+
+.animate-ambient-b {
+  animation: ambientDriftB 30s ease-in-out infinite alternate;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050507;
+}
+::-webkit-scrollbar-thumb {
+  background: #23232b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b47;
+}
+
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media (pointer: fine) {
+  body, a, button {
+    cursor: none !important;
+  }
+}
