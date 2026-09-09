@@ -128,3 +128,92 @@ html.lenis, html.lenis body {
     cursor: none !important;
   }
 }
+
+@keyframes static-electric-glitch {
+    /* --- DETIK 0-1: KEDIP 2 KALI (MASUK & FLICKER) --- */
+    0% {
+      opacity: 0;
+      text-shadow: -4px 0 #00f0ff, 4px 0 #ff0055, 0 0 20px rgba(168,85,247,0.8);
+    }
+    10% { /* Kedip 1 OFF */
+      opacity: 0.1;
+      text-shadow: none;
+    }
+    20% { /* Kedip 1 ON */
+      opacity: 1;
+      text-shadow: 0 0 25px rgba(168,85,247,1), -2px 0 #00f0ff;
+    }
+    30% { /* Kedip 2 OFF */
+      opacity: 0.2;
+      text-shadow: none;
+    }
+    40% { /* Kedip 2 ON & Settling */
+      opacity: 1;
+      text-shadow: 0 0 15px rgba(168,85,247,0.8);
+    }
+
+    /* --- DETIK 1-2.5: JEDA DIAM (1.5 DETIK) --- */
+    41%, 80% {
+      opacity: 0.95;
+      text-shadow: 0 0 18px rgba(168,85,247,0.6);
+    }
+
+    /* --- DETIK 2.5-3.5: KEDIP 2 KALI (KELUAR) --- */
+    83% { /* Kedip 1 OFF */
+      opacity: 0.15;
+      text-shadow: 3px 0 #ff0055;
+    }
+    88% { /* Kedip 1 ON */
+      opacity: 0.9;
+      text-shadow: -3px 0 #00f0ff, 0 0 20px rgba(168,85,247,0.9);
+    }
+    93% { /* Kedip 2 OFF */
+      opacity: 0.05;
+      text-shadow: none;
+    }
+    98%, 100% { /* Lenyap sepenuhnya */
+      opacity: 0;
+      text-shadow: none;
+    }
+  }
+
+  /* Animation 2: Distraksi Piksel (Tanpa Transform / Scale) */
+  @keyframes static-pixel-burst {
+    0% {
+      opacity: 0;
+      clip-path: inset(0 0 0 0);
+    }
+    15% {
+      opacity: 1;
+      clip-path: inset(15% 0 60% 0);
+      filter: drop-shadow(-10px 0 #00f0ff) drop-shadow(10px 0 #ff0055);
+    }
+    30% {
+      clip-path: inset(65% 0 10% 0);
+      filter: drop-shadow(12px 0 #00ff66) drop-shadow(-12px 0 #a855f7);
+    }
+    45% {
+      clip-path: inset(0 0 0 0);
+      filter: none;
+    }
+    80% {
+      clip-path: inset(0 0 0 0);
+      filter: none;
+    }
+    90% {
+      clip-path: inset(40% 0 35% 0);
+      filter: drop-shadow(-15px 0 #ff0055) drop-shadow(15px 0 #00f0ff);
+    }
+    100% {
+      opacity: 0;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .animate-static-glitch {
+    animation: static-electric-glitch 4s ease-in-out infinite;
+  }
+
+  .animate-static-pixel {
+    animation: static-pixel-burst 4s steps(3, end) infinite;
+  }
