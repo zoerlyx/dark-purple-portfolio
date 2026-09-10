@@ -96,7 +96,7 @@ export function TerminalStream() {
         )}
 
         {step >= 2 && (
-          <div className="p-3 bg-neutral-950/80 border border-neutral-800 rounded-sm space-y-1 backdrop-blur-xs animate-in fade-in slide-in-from-bottom-2 duration-400">
+          <div className="p-3 bg-neutral-950/40 border border-neutral-800 rounded-sm space-y-1 backdrop-blur-xs animate-in fade-in slide-in-from-bottom-2 duration-400">
             <div className="flex items-center justify-between text-xs tracking-wider">
               <span className="text-emerald-400 font-bold">STATUS: 200 OK</span>
               <span className="text-neutral-500">LATENCY: 14ms</span>

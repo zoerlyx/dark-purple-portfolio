@@ -131,7 +131,7 @@ return (
         <Reveal delay={550}>
           <div className="pt-12 md:pt-16 border-t border-neutral-800/60 flex flex-col items-center gap-8">
             <p className="font-mono text-xs md:text-sm text-neutral-300 uppercase tracking-widest max-w-xl leading-relaxed text-center mx-auto">
-              &ldquo;I BUILD DIGITAL PRODUCTS AND DATA-DRIVEN SYSTEMS THAT TURN COMPLEX PROBLEMS INTO USEFUL EXPERIENCES.&rdquo;
+              I AM DEDICATED TO BUILDING SOFTWARE, MAKING SENSE OF DATA, AND DIGITAL EXPERIENCES THAT HAVE PURPOSE.MY WORKS SPEAKS LOUDER THAN MY WORDS—EXPLORE THE PROJECT.
             </p>
 
             <div className="flex items-center gap-4">

@@ -54,9 +54,9 @@
 }
 
 .section-editorial-title {
-  font-size: clamp(2.4rem, 6vw, 6.5rem);
-  line-height: 0.92;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
 }
 
 /* Subtle editorial film grain overlay */
@@ -217,3 +217,29 @@ html.lenis, html.lenis body {
   .animate-static-pixel {
     animation: static-pixel-burst 4s steps(3, end) infinite;
   }
+
+/* Update file globals.css / index.css Anda */
+
+@keyframes marqueeLeft {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 25s linear infinite;
+}
+
+/* Hentikan SEMUA anak elemen marquee saat kontainer induknya (group) di-hover */
+.group:hover .animate-marquee-left,
+.group:hover .animate-marquee-right {
+  animation-play-state: paused;
+}

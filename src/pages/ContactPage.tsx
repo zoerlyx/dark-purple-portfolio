@@ -42,9 +42,9 @@ export const ContactPage: React.FC = () => {
               </div>
 
               {/* Kolom Kanan: Compact Hologram Radar Card */}
-              <div className="w-full h-full">
-                      <TerminalStream />
-                    </div>
+              <div className="w-full px-4 sm:px-8 md:px-12 h-auto">
+                  <TerminalStream />
+              </div>
             </div>
           </Reveal>
         </div>
@@ -107,7 +107,7 @@ export const ContactPage: React.FC = () => {
                 </a>
               </div>
 
-              <div className="mt-12 p-6 rounded-sm bg-neutral-950 border border-neutral-800 text-xs font-mono text-neutral-400">
+              <div className="mt-12 text-xs font-mono text-neutral-400 text-justify">
                 <div className="text-purple-400 font-bold mb-2">AVAILABILITY // 2026</div>
                 <p className="leading-relaxed font-bold text-neutral-300">
                   Currently open for strategic architectural consulting, end-to-end software engineering, and advanced data analytics engagements. Partnering with visionary teams to build scalable solutions.
@@ -220,10 +220,21 @@ export const ContactPage: React.FC = () => {
                   </div>
 
                   <div>
-                    <MagneticButton type="submit" variant="primary">
-                      <span>SEND MESSAGE</span>
-                      <Send className="w-3.5 h-3.5 ml-1" />
-                    </MagneticButton>
+                    <button
+                      type="submit"
+                      className="w-full relative group px-7 py-4 bg-neutral-950 border border-neutral-800 text-neutral-300 font-mono text-xs uppercase tracking-widest flex items-center justify-center gap-2.5 transition-colors duration-300 hover:text-white hover:border-neutral-600 active:scale-[0.98] overflow-hidden"
+                    >
+                      {/* Corner Brackets (HUD Style) */}
+                      <span className="absolute top-0 left-0 w-1.5 h-1.5 border-t-2 border-l-2 border-purple-500 group-hover:w-3 group-hover:h-3 transition-all duration-200" />
+                      <span className="absolute bottom-0 right-0 w-1.5 h-1.5 border-b-2 border-r-2 border-purple-500 group-hover:w-3 group-hover:h-3 transition-all duration-200" />
+
+                      {/* Scanner Line Sweep */}
+                      <span className="absolute inset-0 w-1/3 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-[400%] transition-transform duration-1000 ease-out" />
+
+                      {/* Button Content */}
+                      <span className="relative z-10 font-bold">SEND MESSAGE</span>
+                      <Send className="relative z-10 w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-45 group-hover:text-purple-400" />
+                    </button>
                   </div>
                 </form>
               )}
