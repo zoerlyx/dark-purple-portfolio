@@ -126,8 +126,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>&copy; {currentYear} FARDHO Z. ALL RIGHTS RESERVED.</div>
           
           <div className="flex items-center gap-4">
-            <span className="text-purple-400/80">TYPESCRIPT + REACT</span>
-            <span>&bull;</span>
             
             {/* Tombol Back to Top dengan Animasi Custom Smooth Scroll */}
             <button

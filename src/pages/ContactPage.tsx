@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Reveal } from '../components/ui/Reveal';
 import { MagneticButton } from '../components/ui/MagneticButton';
 import { ArrowUpRight, CheckCircle2, Send } from 'lucide-react';
+import { TerminalStream } from "../components/ui/TerminalStream";
 
 export const ContactPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -21,18 +22,30 @@ export const ContactPage: React.FC = () => {
         {/* Page Header */}
         <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-24">
           <Reveal>
-            <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-              <span>INDEX // 04</span>
+            {/* Grid 2 Kolom (1:1 / grid-cols-2) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-end">
+              
+              {/* Kolom Kiri (Struktur & Teks Asli) */}
+              <div>
+                <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+                  <span>04 // CONTACT</span>
+                </div>
+                <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
+                  LET&apos;S
+                  <br />
+                  <span className="text-purple-400">TALK.</span>
+                </h1>
+                <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-xl leading-relaxed">
+                  &ldquo;HAVE AN IDEA, PROJECT, OR OPPORTUNITY? LET&apos;S START A CONVERSATION.&rdquo;
+                </p>
+              </div>
+
+              {/* Kolom Kanan: Compact Hologram Radar Card */}
+              <div className="w-full h-full">
+                      <TerminalStream />
+                    </div>
             </div>
-            <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
-              LET&apos;S
-              <br />
-              <span className="text-neutral-400">TALK.</span>
-            </h1>
-            <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-xl leading-relaxed">
-              &ldquo;HAVE AN IDEA, PROJECT, OR OPPORTUNITY? LET&apos;S START A CONVERSATION.&rdquo;
-            </p>
           </Reveal>
         </div>
 
@@ -46,7 +59,7 @@ export const ContactPage: React.FC = () => {
 
               <div className="divide-y divide-neutral-800 border-y border-neutral-800 font-mono text-xs uppercase tracking-widest">
                 <a
-                  href="mailto:koushikizurro1@gmail.com"
+                  href="mailto:zurrahmanfardho0@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="link"
@@ -55,14 +68,14 @@ export const ContactPage: React.FC = () => {
                   <div>
                     <span className="text-neutral-400 block text-[10px] mb-1">01 // INBOX</span>
                     <span className="text-sm font-bold text-white group-hover:text-purple-300">
-                      koushikizurro1@gmail.com
+                      zurrahmanfardho0@gmail.com
                     </span>
                   </div>
                   <ArrowUpRight className="w-5 h-5 text-neutral-400 group-hover:text-purple-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/koushik-portfolio"
+                  href="https://www.linkedin.com/in/fardho-zurrahman-6515553a1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="link"
@@ -78,7 +91,7 @@ export const ContactPage: React.FC = () => {
                 </a>
 
                 <a
-                  href="https://github.com/koushik-portfolio"
+                  href="https://github.com/zoerlyx"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="link"
@@ -96,8 +109,8 @@ export const ContactPage: React.FC = () => {
 
               <div className="mt-12 p-6 rounded-sm bg-neutral-950 border border-neutral-800 text-xs font-mono text-neutral-400">
                 <div className="text-purple-400 font-bold mb-2">AVAILABILITY // 2026</div>
-                <p className="leading-relaxed font-sans text-neutral-300">
-                  Accepting selected architectural advisory, full-stack software development projects, and data analytics consulting engagements.
+                <p className="leading-relaxed font-bold text-neutral-300">
+                  Currently open for strategic architectural consulting, end-to-end software engineering, and advanced data analytics engagements. Partnering with visionary teams to build scalable solutions.
                 </p>
               </div>
             </Reveal>
@@ -111,25 +124,44 @@ export const ContactPage: React.FC = () => {
               </div>
 
               {isSubmitted ? (
-                <div className="p-8 border border-purple-500/40 bg-purple-950/20 rounded-sm font-mono text-xs space-y-4 animate-in fade-in">
-                  <div className="flex items-center gap-3 text-white font-bold text-sm">
-                    <CheckCircle2 className="w-5 h-5 text-purple-400" />
-                    <span>TRANSMISSION RECEIVED</span>
+                <div className="p-6 sm:p-8 bg-neutral-950 border border-neutral-800 rounded-sm font-mono text-xs space-y-5 animate-in fade-in duration-300">
+                  
+                  {/* Header Indicator */}
+                  <div className="flex items-center justify-between pb-3 border-b border-neutral-900">
+                    <div className="flex items-center gap-2 text-purple-400 font-bold tracking-wider">
+                      <CheckCircle2 className="w-4 h-4 text-purple-400" />
+                      <span>TRANSMISSION_RECEIVED // LOGGED</span>
+                    </div>
+                    <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-sm border border-emerald-500/20">
+                      STATUS: 200 OK
+                    </span>
                   </div>
-                  <p className="text-neutral-300 font-sans text-sm leading-relaxed">
-                    Thank you, {name}. Your inquiry has been logged. I will review your note and respond promptly via {email}.
+
+                  {/* Body Text */}
+                  <p className="text-neutral-300 font-bold text-xs sm:text-sm leading-relaxed">
+                    Thank you, <span className="text-white font-mono font-semibold">{name}</span>. Your inquiry has been securely logged. I’ll review the details and respond to <span className="text-white font-mono font-semibold">{email}</span> within 24 hours.
                   </p>
-                  <button
-                    onClick={() => {
-                      setIsSubmitted(false);
-                      setName('');
-                      setEmail('');
-                      setMessage('');
-                    }}
-                    className="mt-4 underline text-purple-400 hover:text-purple-300 uppercase tracking-widest cursor-pointer"
-                  >
-                    Send another message
-                  </button>
+
+                  {/* Action Area */}
+                  <div className="pt-2 border-t border-neutral-900 flex items-center justify-between">
+                    <button
+                      onClick={() => {
+                        setIsSubmitted(false);
+                        setName('');
+                        setEmail('');
+                        setMessage('');
+                      }}
+                      className="inline-flex items-center gap-2 text-[11px] font-mono text-purple-400 hover:text-purple-300 uppercase tracking-widest cursor-pointer transition-colors group"
+                    >
+                      <span className="text-neutral-600 group-hover:text-purple-400">&gt;</span>
+                      <span>SEND_ANOTHER_MESSAGE</span>
+                    </button>
+
+                    <span className="text-[10px] text-neutral-600 uppercase hidden sm:inline-block">
+                      END_OF_LINE
+                    </span>
+                  </div>
+
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -146,8 +178,8 @@ export const ContactPage: React.FC = () => {
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="e.g. Elena Rostova"
-                      className="w-full bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors"
+                      placeholder="e.g. Adrian Sanjaya"
+                      className="w-full font-mono bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors"
                     />
                   </div>
 
@@ -164,8 +196,8 @@ export const ContactPage: React.FC = () => {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="e.g. elena@enterprise.com"
-                      className="w-full bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors"
+                      placeholder="e.g. adrian@gmail.com"
+                      className="w-full font-mono bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors"
                     />
                   </div>
 
@@ -182,8 +214,8 @@ export const ContactPage: React.FC = () => {
                       rows={5}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Describe your project, architectural challenge, or opportunity..."
-                      className="w-full bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors resize-none"
+                      placeholder="Tell me about your project, technical challenge, or opportunity..."
+                      className="w-full font-mono bg-[#0a0a0f] border border-neutral-800 focus:border-purple-500 rounded px-4 py-3 text-sm text-white placeholder-neutral-400 focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
