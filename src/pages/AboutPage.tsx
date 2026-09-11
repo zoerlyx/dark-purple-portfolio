@@ -77,59 +77,106 @@ export const AboutPage: React.FC = () => {
           </Reveal>
 
           <Reveal delay={150}>
-            <div className="my-6 md:my-8">
+            <div className="my-8 md:my-12">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                
+                {/* STEP 01 */}
+                <div className="relative border border-neutral-800/80 hover:border-purple-500/60 p-6 bg-neutral-950/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] flex flex-col justify-between group">
+                  <div>
+                    <div className="font-mono text-xs text-purple-400 font-bold tracking-widest mb-4">
+                      [ 01 ]
+                    </div>
+                    <div className="text-white font-mono font-bold text-sm md:text-base tracking-wider mb-3 group-hover:text-purple-300 transition-colors">
+                      UNDERSTAND
+                    </div>
+                    <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
+                      I start by understanding the problem, the people involved, the requirements, and the context before deciding on a solution.
+                    </p>
+                  </div>
 
-
-              {/* Editorial vertical process chain */}
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4 font-mono text-xs uppercase tracking-widest text-neutral-400">
-                <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
-                  <div className="text-purple-400 text-sm font-bold mb-3">01</div>
-                  <div className="text-white font-bold text-base mb-2">UNDERSTAND</div>
-                  <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    I start by understanding the problem, the people involved, the requirements, and the context before deciding on a solution.
-                  </p>
-                  <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
+                  {/* Arrow Connector */}
+                  <div className="mt-4 md:mt-0 flex justify-end md:absolute md:-right-3.5 md:top-1/2 md:-translate-y-1/2 z-20 pointer-events-none">
+                    <ArrowDown className="w-4 h-4 text-purple-400/60 group-hover:text-purple-400 group-hover:translate-x-1 md:-rotate-90 transition-all duration-300" />
+                  </div>
                 </div>
 
-                <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
-                  <div className="text-purple-400 text-sm font-bold mb-3">02</div>
-                  <div className="text-white font-bold text-base mb-2">STRUCTURE</div>
-                  <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    I break the problem down into clear requirements, systems, workflows, data, and interfaces so the solution has a solid foundation.
-                  </p>
-                  <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
+                {/* STEP 02 */}
+                <div className="relative border border-neutral-800/80 hover:border-purple-500/60 p-6 bg-neutral-950/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] flex flex-col justify-between group">
+                  <div>
+                    <div className="font-mono text-xs text-purple-400 font-bold tracking-widest mb-4">
+                      [ 02 ]
+                    </div>
+                    <div className="text-white font-mono font-bold text-sm md:text-base tracking-wider mb-3 group-hover:text-purple-300 transition-colors">
+                      STRUCTURE
+                    </div>
+                    <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
+                      I break the problem down into clear requirements, systems, workflows, data, and interfaces so the solution has a solid foundation.
+                    </p>
+                  </div>
+
+                  <div className="mt-4 md:mt-0 flex justify-end md:absolute md:-right-3.5 md:top-1/2 md:-translate-y-1/2 z-20 pointer-events-none">
+                    <ArrowDown className="w-4 h-4 text-purple-400/60 group-hover:text-purple-400 group-hover:translate-x-1 md:-rotate-90 transition-all duration-300" />
+                  </div>
                 </div>
 
-                <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
-                  <div className="text-purple-400 text-sm font-bold mb-3">03</div>
-                  <div className="text-white font-bold text-base mb-2">BUILD & ANALYZE</div>
-                  <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    I choose the approach that fits the problem. That may mean designing and building software, processing and analyzing data, or bringing both together.
-                  </p>
-                  <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
+                {/* STEP 03 */}
+                <div className="relative border border-neutral-800/80 hover:border-purple-500/60 p-6 bg-neutral-950/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] flex flex-col justify-between group">
+                  <div>
+                    <div className="font-mono text-xs text-purple-400 font-bold tracking-widest mb-4">
+                      [ 03 ]
+                    </div>
+                    <div className="text-white font-mono font-bold text-sm md:text-base tracking-wider mb-3 group-hover:text-purple-300 transition-colors">
+                      BUILD & ANALYZE
+                    </div>
+                    <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
+                      I choose the approach that fits the problem. That may mean designing and building software, processing and analyzing data, or bringing both together.
+                    </p>
+                  </div>
+
+                  <div className="mt-4 md:mt-0 flex justify-end md:absolute md:-right-3.5 md:top-1/2 md:-translate-y-1/2 z-20 pointer-events-none">
+                    <ArrowDown className="w-4 h-4 text-purple-400/60 group-hover:text-purple-400 group-hover:translate-x-1 md:-rotate-90 transition-all duration-300" />
+                  </div>
                 </div>
 
-                <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
-                  <div className="text-purple-400 text-sm font-bold mb-3">04</div>
-                  <div className="text-white font-bold text-base mb-2">EVALUATE</div>
-                  <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    I use testing, analysis, visualization, and measurable results to see what works, identify what doesn’t, and understand why.
-                  </p>
-                  <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
+                {/* STEP 04 */}
+                <div className="relative border border-neutral-800/80 hover:border-purple-500/60 p-6 bg-neutral-950/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] flex flex-col justify-between group">
+                  <div>
+                    <div className="font-mono text-xs text-purple-400 font-bold tracking-widest mb-4">
+                      [ 04 ]
+                    </div>
+                    <div className="text-white font-mono font-bold text-sm md:text-base tracking-wider mb-3 group-hover:text-purple-300 transition-colors">
+                      EVALUATE
+                    </div>
+                    <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
+                      I use testing, analysis, visualization, and measurable results to see what works, identify what doesn’t, and understand why.
+                    </p>
+                  </div>
+
+                  <div className="mt-4 md:mt-0 flex justify-end md:absolute md:-right-3.5 md:top-1/2 md:-translate-y-1/2 z-20 pointer-events-none">
+                    <ArrowDown className="w-4 h-4 text-purple-400/60 group-hover:text-purple-400 group-hover:translate-x-1 md:-rotate-90 transition-all duration-300" />
+                  </div>
                 </div>
 
-                <div className="border border-purple-500/40 p-6 rounded-sm bg-purple-950/10 relative">
-                  <div className="text-purple-400 text-sm font-bold mb-3">05</div>
-                  <div className="text-white font-bold text-base mb-2">REFINE</div>
-                  <p className="text-neutral-300 text-[11px] leading-relaxed lowercase font-sans">
-                    I keep improving the solution based on what I learn, whether that means simplifying the implementation, improving data quality, optimizing performance, or making the result easier to use.
-                  </p>
+                {/* STEP 05 */}
+                <div className="relative border border-purple-500/50 hover:border-purple-400 p-6 bg-purple-950/20 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(168,85,247,0.25)] flex flex-col justify-between group">
+                  <div>
+                    <div className="font-mono text-xs text-purple-300 font-bold tracking-widest mb-4">
+                      [ 05 ]
+                    </div>
+                    <div className="text-white font-mono font-bold text-sm md:text-base tracking-wider mb-3 text-purple-200">
+                      REFINE
+                    </div>
+                    <p className="text-neutral-300 text-[11px] leading-relaxed lowercase font-sans">
+                      I keep improving the solution based on what I learn, whether that means simplifying the implementation, improving data quality, optimizing performance, or making the result easier to use.
+                    </p>
+                  </div>
                 </div>
+
               </div>
             </div>
           </Reveal>
         </section>
-
+        
         {/* 6.3 EXPERIENCE*/}
         <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
           <Reveal>
@@ -257,64 +304,92 @@ export const AboutPage: React.FC = () => {
             />
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-12 font-mono">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12 font-mono">
             {/* FRONTEND */}
             <Reveal delay={100}>
-              <div className="border-t-2 border-white pt-4">
-                <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">FRONTEND</div>
-                <ul className="space-y-2.5 text-xs text-neutral-300">
-                  <li className="hover:text-purple-300 transition-colors">React 19</li>
-                  <li className="hover:text-purple-300 transition-colors">Next.js</li>
-                  <li className="hover:text-purple-300 transition-colors">TypeScript</li>
-                  <li className="hover:text-purple-300 transition-colors">Tailwind CSS</li>
-                  <li className="hover:text-purple-300 transition-colors">Javascript</li>
-                  <li className="hover:text-purple-300 transition-colors">Motion / GSAP</li>
-                </ul>
+              <div className="group relative overflow-hidden bg-neutral-900/40 border border-neutral-800 rounded-xl p-6 transition-all duration-300 hover:border-neutral-600 hover:-translate-y-1">
+                {/* Animated Glowing Background Effect */}
+                <div className="absolute -inset-10 bg-gradient-to-r from-purple-500/20 via-indigo-500/20 to-purple-500/0 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-6 transition-all duration-1000 ease-in-out pointer-events-none" />
+
+                {/* Accent Line - Top */}
+                <div className="relative z-10">
+                  <div className="absolute -top-6 -left-6 -right-6 h-[2px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+                  <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">FRONTEND</div>
+                  <ul className="space-y-2.5 text-xs text-neutral-300">
+                    <li className="hover:text-purple-300 transition-colors">React 19</li>
+                    <li className="hover:text-purple-300 transition-colors">Next.js</li>
+                    <li className="hover:text-purple-300 transition-colors">TypeScript</li>
+                    <li className="hover:text-purple-300 transition-colors">Tailwind CSS</li>
+                    <li className="hover:text-purple-300 transition-colors">Javascript</li>
+                    <li className="hover:text-purple-300 transition-colors">Motion / GSAP</li>
+                  </ul>
+                </div>
               </div>
             </Reveal>
 
             {/* BACKEND */}
             <Reveal delay={180}>
-              <div className="border-t-2 border-neutral-700 pt-4">
-                <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">BACKEND</div>
-                <ul className="space-y-2.5 text-xs text-neutral-300">
-                  <li className="hover:text-purple-300 transition-colors">Node.js / Express</li>
-                  <li className="hover:text-purple-300 transition-colors">RESTful APIs</li>
-                  <li className="hover:text-purple-300 transition-colors">PostgreSQL / PostGIS</li>
-                  <li className="hover:text-purple-300 transition-colors">TypeScript</li>
-                  <li className="hover:text-purple-300 transition-colors">SQL</li>
-                  <li className="hover:text-purple-300 transition-colors">Git</li>
-                </ul>
+              <div className="group relative overflow-hidden bg-neutral-900/40 border border-neutral-800 rounded-xl p-6 transition-all duration-300 hover:border-neutral-600 hover:-translate-y-1">
+                {/* Animated Glowing Background Effect */}
+                <div className="absolute -inset-10 bg-gradient-to-r from-purple-500/15 via-blue-500/15 to-purple-500/0 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-6 transition-all duration-1000 ease-in-out pointer-events-none" />
+
+                {/* Accent Line - Top */}
+                <div className="relative z-10">
+                  <div className="absolute -top-6 -left-6 -right-6 h-[2px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+                  <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">BACKEND</div>
+                  <ul className="space-y-2.5 text-xs text-neutral-300">
+                    <li className="hover:text-purple-300 transition-colors">Node.js / Express</li>
+                    <li className="hover:text-purple-300 transition-colors">RESTful APIs</li>
+                    <li className="hover:text-purple-300 transition-colors">PostgreSQL / PostGIS</li>
+                    <li className="hover:text-purple-300 transition-colors">TypeScript</li>
+                    <li className="hover:text-purple-300 transition-colors">SQL</li>
+                    <li className="hover:text-purple-300 transition-colors">Git</li>
+                  </ul>
+                </div>
               </div>
             </Reveal>
 
             {/* DATA */}
             <Reveal delay={260}>
-              <div className="border-t-2 border-purple-500 pt-4">
-                <div className="text-purple-400 font-bold text-xs uppercase tracking-widest mb-4">DATA</div>
-                <ul className="space-y-2.5 text-xs text-neutral-300">
-                  <li className="hover:text-purple-300 transition-colors">Python (NumPy, Pandas)</li>
-                  <li className="hover:text-purple-300 transition-colors">SQL (Complex Queries/CTEs)</li>
-                  <li className="hover:text-purple-300 transition-colors">Power BI / DAX Measures</li>
-                  <li className="hover:text-purple-300 transition-colors">Data Visualization</li>
-                  <li className="hover:text-purple-300 transition-colors">Scikit-Learn / PyTorch</li>
-                  <li className="hover:text-purple-300 transition-colors">Excel / Google Sheets</li>
-                </ul>
+              <div className="group relative overflow-hidden bg-neutral-900/40 border border-neutral-800 rounded-xl p-6 transition-all duration-300 hover:border-neutral-600 hover:-translate-y-1">
+                {/* Animated Glowing Background Effect (Stronger Accent) */}
+                <div className="absolute -inset-10 bg-gradient-to-r from-purple-500/30 via-purple-600/20 to-indigo-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-6 transition-all duration-1000 ease-in-out pointer-events-none" />
+
+                {/* Accent Line - Top */}
+                <div className="relative z-10">
+                  <div className="absolute -top-6 -left-6 -right-6 h-[2px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+                  <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">DATA</div>
+                  <ul className="space-y-2.5 text-xs text-neutral-300">
+                    <li className="hover:text-purple-300 transition-colors">Python (NumPy, Pandas)</li>
+                    <li className="hover:text-purple-300 transition-colors">SQL (Complex Queries/CTEs)</li>
+                    <li className="hover:text-purple-300 transition-colors">Power BI / DAX Measures</li>
+                    <li className="hover:text-purple-300 transition-colors">Data Visualization</li>
+                    <li className="hover:text-purple-300 transition-colors">Scikit-Learn / PyTorch</li>
+                    <li className="hover:text-purple-300 transition-colors">Excel / Google Sheets</li>
+                  </ul>
+                </div>
               </div>
             </Reveal>
 
             {/* TOOLS */}
             <Reveal delay={340}>
-              <div className="border-t-2 border-neutral-700 pt-4">
-                <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">TOOLS &amp; INFRA</div>
-                <ul className="space-y-2.5 text-xs text-neutral-300">
-                  <li className="hover:text-purple-300 transition-colors">Git &amp; GitHub Actions</li>
-                  <li className="hover:text-purple-300 transition-colors">Docker Containerization</li>
-                  <li className="hover:text-purple-300 transition-colors">Figma (Design Systems)</li>
-                  <li className="hover:text-purple-300 transition-colors">Vercel</li>
-                  <li className="hover:text-purple-300 transition-colors">CI/CD &amp; Automation</li>
-                  <li className="hover:text-purple-300 transition-colors">Postman</li>
-                </ul>
+              <div className="group relative overflow-hidden bg-neutral-900/40 border border-neutral-800 rounded-xl p-6 transition-all duration-300 hover:border-neutral-600 hover:-translate-y-1">
+                {/* Animated Glowing Background Effect */}
+                <div className="absolute -inset-10 bg-gradient-to-r from-purple-500/15 via-indigo-500/15 to-purple-500/0 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-12 group-hover:translate-y-6 transition-all duration-1000 ease-in-out pointer-events-none" />
+
+                {/* Accent Line - Top */}
+                <div className="relative z-10">
+                  <div className="absolute -top-6 -left-6 -right-6 h-[2px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+                  <div className="text-white font-bold text-xs uppercase tracking-widest mb-4">TOOLS &amp; INFRA</div>
+                  <ul className="space-y-2.5 text-xs text-neutral-300">
+                    <li className="hover:text-purple-300 transition-colors">Git &amp; GitHub Actions</li>
+                    <li className="hover:text-purple-300 transition-colors">Docker Containerization</li>
+                    <li className="hover:text-purple-300 transition-colors">Figma (Design Systems)</li>
+                    <li className="hover:text-purple-300 transition-colors">Vercel</li>
+                    <li className="hover:text-purple-300 transition-colors">CI/CD &amp; Automation</li>
+                    <li className="hover:text-purple-300 transition-colors">Postman</li>
+                  </ul>
+                </div>
               </div>
             </Reveal>
           </div>
