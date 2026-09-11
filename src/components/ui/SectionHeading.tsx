@@ -38,7 +38,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   </div>
 
   {subtitle && (
-    <p className="font-mono text-xs md:text-sm text-neutral-400 max-w-md uppercase tracking-wider leading-relaxed pt-4">
+    <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed pt-4">
       {subtitle}
     </p>
   )}

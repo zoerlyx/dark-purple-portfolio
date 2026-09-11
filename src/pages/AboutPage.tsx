@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (
-    <div className="w-full pt-32 md:pt-40 pb-28 md:pb-36">
+    <div className="w-full pt-32 md:pt-40 pb-28 md:pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Page Header */}
         <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-24 flex flex-col items-center justify-center text-center">
@@ -21,7 +21,7 @@ export const AboutPage: React.FC = () => {
               <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase">
                 ABOUT
                 <br />
-                <span className="text-neutral-400">ME.</span>
+                <span className="text-purple-400">ME.</span>
               </h1>
             </div>
           </Reveal>
@@ -30,29 +30,23 @@ export const AboutPage: React.FC = () => {
         {/* 6.1 PROFILE SECTION */}
         <section className="mb-12 md:mb-16">
           <Reveal>
-            <div className="lg:col-span-7 flex flex-col justify-between">
-              <div>
-                {/* Menggunakan SectionHeading */}
-                <SectionHeading
-                  tag="// 01 &bull; AREA OF EXPERTISE"
-                  title="SOFTWARE ENGINEER & DATA ANALYST"
-                />
-
-                {/* Paragraf Bio */}
-                <div className="space-y-6 text-neutral-300 text-base md:text-lg leading-relaxed font-light">
-                  <p className="font-mono text-justify">
-                    I’m a Software Engineer focused on building practical digital solutions through software and data. I combine structured engineering with analytical thinking to develop products that are reliable, maintainable, and grounded in real-world needs.
+            <SectionHeading
+              title="INTRODUCTION"
+              tag="// 01 &bull; AREA OF EXPERTISE"
+            />
+            <div className="space-y-6 text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+                  <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed text-justify">
+                    I’m a Software Engineer with a strong interest in data and the way technology can be used to solve real problems. My work spans software development, data processing, analysis, modeling, and visualization, allowing me to approach problems from both an engineering and analytical perspective.
                   </p>
-                  <p className="font-mono text-justify">
-                    I like to understand how things work before deciding how they should be built. Whether I’m working with code or analyzing data, I pay attention to the details that matter, question what doesn’t make sense, and keep refining the solution until it is clear, efficient, and meaningful.
+                  <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed text-justify">
+                    I like to understand how things work before deciding how they should be built. I pay attention to the details that matter, question assumptions when something doesn’t make sense, and keep refining my work until the solution is clear, effective, and useful.
                   </p>
-                  <p className="font-mono text-justify">
-                    I enjoy being involved from the initial problem to the final result, rather than focusing on just one part of the process. Sometimes that means designing and building a software solution, sometimes exploring data to uncover useful insights, and sometimes connecting both to solve a problem more effectively. That combination of engineering and analysis is what makes building things interesting to me.
+                  <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed text-justify">
+                    I enjoy being involved throughout the process, from understanding the initial problem to delivering the final result. Sometimes that means designing and building a software solution, sometimes exploring data to uncover meaningful insights, and sometimes bringing both together to solve a problem more effectively. That combination of engineering and analysis is what I find most interesting about building things.
                   </p>
                 </div>
-              </div>
 
-
+            <div className="lg:col-span-7 flex flex-col justify-between">
                 <div className="mt-12 pt-8 border-t border-neutral-800 grid grid-cols-2 sm:grid-cols-3 gap-64 font-mono text-xs uppercase tracking-wider text-neutral-400">
                   <div>
                     <span className="text-white block font-bold">EDUCATION</span>
@@ -73,28 +67,26 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.2 MY APPROACH (EDITORIAL TYPOGRAPHY PROCESS) */}
-        <section className="mb-28 md:mb-40 border-t border-neutral-800 pt-16 md:pt-24">
+        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
           <Reveal>
             <SectionHeading
               title="MY APPROACH"
-              tag="// 02 &bull; PHILOSOPHY"
-              subtitle="METHODOLOGY GROUNDED IN STRUCTURE, EMPIRICAL EVIDENCE, AND CONTINUOUS REFINEMENT."
+              tag="// 02 &bull; WORKFLOW"
+              subtitle="A STRUCTURED WAY OF TURNING PROBLEMS INTO RELIABLE SOFTWARE, USEFUL INSIGHTS, AND BETTER SOLUTIONS."
             />
           </Reveal>
 
           <Reveal delay={150}>
             <div className="my-6 md:my-8">
-              <h3 className="font-display font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-6 md:mb-8">
-                &ldquo;I LIKE BUILDING THINGS THAT MAKE SENSE.&rdquo;
-              </h3>
+
 
               {/* Editorial vertical process chain */}
               <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4 font-mono text-xs uppercase tracking-widest text-neutral-400">
                 <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
                   <div className="text-purple-400 text-sm font-bold mb-3">01</div>
-                  <div className="text-white font-bold text-base mb-2">PROBLEM</div>
+                  <div className="text-white font-bold text-base mb-2">UNDERSTAND</div>
                   <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    Isolate operational friction, bottlenecks, and core user constraints before writing code.
+                    I start by understanding the problem, the people involved, the requirements, and the context before deciding on a solution.
                   </p>
                   <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
                 </div>
@@ -103,34 +95,34 @@ export const AboutPage: React.FC = () => {
                   <div className="text-purple-400 text-sm font-bold mb-3">02</div>
                   <div className="text-white font-bold text-base mb-2">STRUCTURE</div>
                   <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    Formulate relational schemas, data pipelines, API contracts, and UX wireframe topologies.
+                    I break the problem down into clear requirements, systems, workflows, data, and interfaces so the solution has a solid foundation.
                   </p>
                   <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
                 </div>
 
                 <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
                   <div className="text-purple-400 text-sm font-bold mb-3">03</div>
-                  <div className="text-white font-bold text-base mb-2">BUILD</div>
+                  <div className="text-white font-bold text-base mb-2">BUILD & ANALYZE</div>
                   <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    Execute with type-safe engineering, clean abstractions, and modular component architecture.
+                    I choose the approach that fits the problem. That may mean designing and building software, processing and analyzing data, or bringing both together.
                   </p>
                   <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
                 </div>
 
                 <div className="border border-neutral-800 p-6 rounded-sm bg-neutral-950/40 relative">
                   <div className="text-purple-400 text-sm font-bold mb-3">04</div>
-                  <div className="text-white font-bold text-base mb-2">MEASURE</div>
+                  <div className="text-white font-bold text-base mb-2">EVALUATE</div>
                   <p className="text-neutral-400 text-[11px] leading-relaxed lowercase font-sans">
-                    Monitor telemetry metrics, database latency, client render frames, and business outcomes.
+                    I use testing, analysis, visualization, and measurable results to see what works, identify what doesn’t, and understand why.
                   </p>
                   <ArrowDown className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-neutral-400 -rotate-90 z-10" />
                 </div>
 
                 <div className="border border-purple-500/40 p-6 rounded-sm bg-purple-950/10 relative">
                   <div className="text-purple-400 text-sm font-bold mb-3">05</div>
-                  <div className="text-white font-bold text-base mb-2">IMPROVE</div>
+                  <div className="text-white font-bold text-base mb-2">REFINE</div>
                   <p className="text-neutral-300 text-[11px] leading-relaxed lowercase font-sans">
-                    Continuously eliminate technical debt, optimize query execution, and refine tactile micro-interactions.
+                    I keep improving the solution based on what I learn, whether that means simplifying the implementation, improving data quality, optimizing performance, or making the result easier to use.
                   </p>
                 </div>
               </div>
@@ -138,52 +130,117 @@ export const AboutPage: React.FC = () => {
           </Reveal>
         </section>
 
-        {/* 6.3 EXPERIENCE (EDITORIAL TIMELINE) */}
-        <section className="mb-28 md:mb-40 border-t border-neutral-800 pt-16 md:pt-24">
+        {/* 6.3 EXPERIENCE*/}
+        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
           <Reveal>
             <SectionHeading
               title="EXPERIENCE"
-              tag="// 03 &bull; CHRONOLOGY"
-              subtitle="CAREER MILESTONES AND SYSTEM DEVELOPMENT ROLES."
+              tag="// 03 &bull; PROFESSIONAL EXPERIENCE"
+              subtitle="A RECORD OF PROFESSIONAL ROLES, CONTRIBUTIONS, AND GROWTH"
             />
           </Reveal>
 
           <div className="divide-y divide-neutral-800/80 font-mono">
             <Reveal delay={100}>
               <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
-                <div className="md:col-span-2 text-purple-400 font-bold text-sm">2025 &mdash; PRESENT</div>
+                <div className="md:col-span-2 text-purple-400 font-bold text-sm">2026 &mdash; PRESENT</div>
                 <div className="md:col-span-4">
-                  <div className="text-white font-display text-xl font-bold uppercase">SENIOR SOFTWARE &amp; DATA ENGINEER</div>
-                  <div className="text-neutral-400 text-xs mt-1">INDEPENDENT CONSULTING / PRODUCT LABS</div>
+                  <div className="text-white font-display text-xl font-bold uppercase">FRONTEND ENGINEER & &amp; UI/UX DESIGNER</div>
+                  <div className="text-neutral-400 text-xs mt-1">DENGARBAIN — ACCESSIBILITY PWA</div>
                 </div>
                 <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
-                  Directing end-to-end delivery of enterprise data warehouses, streaming analytics systems, and high-frequency real-time web telemetry clients.
+                  Contributed to the design and frontend development of a responsive, cross-platform PWA for learning Hadis Arbain, with a focus on accessibility for blind and visually impaired users. Implemented interfaces that support both reading and listening, including TalkBack-friendly navigation and accessible interactions.
                 </div>
               </div>
             </Reveal>
 
             <Reveal delay={180}>
               <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
-                <div className="md:col-span-2 text-neutral-400 text-sm">2024 &mdash; 2025</div>
+                <div className="md:col-span-2 text-neutral-400 text-sm">2026</div>
                 <div className="md:col-span-4">
-                  <div className="text-white font-display text-xl font-bold uppercase">BI DEVELOPER &amp; PIPELINE ARCHITECT</div>
-                  <div className="text-neutral-400 text-xs mt-1">LOGISTICS &amp; RETAIL SYSTEMS</div>
+                  <div className="text-white font-display text-xl font-bold uppercase">BI DEVELOPER &amp; DATA PIPELINE ENGINEER</div>
+                  <div className="text-neutral-400 text-xs mt-1">NUSANTARA RETAIL — DATA QUALITY & BUSINESS MONITORING</div>
                 </div>
                 <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
-                  Constructed multi-regional automated reconciliation pipelines, dimensional data models in Power BI/PostgreSQL, and edge-deployed computer vision monitoring models.
+                  Developed a business intelligence solution for monitoring retail operations and data quality, working across PostgreSQL data processing and Power BI visualization. Built data quality checks, analytical views, and interactive dashboards to turn operational data into clearer business insights.
                 </div>
               </div>
             </Reveal>
 
             <Reveal delay={260}>
               <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
-                <div className="md:col-span-2 text-neutral-400 text-sm">2023 &mdash; 2024</div>
+                <div className="md:col-span-2 text-neutral-400 text-sm">2026</div>
                 <div className="md:col-span-4">
-                  <div className="text-white font-display text-xl font-bold uppercase">FULL-STACK SOFTWARE DEVELOPER</div>
-                  <div className="text-neutral-400 text-xs mt-1">DIGITAL PRODUCT PLATFORMS</div>
+                  <div className="text-white font-display text-xl font-bold uppercase">DATA COLLECTION & WEB SCRAPING DEVELOPER</div>
+                  <div className="text-neutral-400 text-xs mt-1">PERSPEKTIV IDN</div>
                 </div>
                 <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
-                  Engineered offline-first mobile applications with SQLite/CRDT synchronization, developed responsive WebGL visualizers, and implemented RESTful microservices.
+                  Developed an automated web scraping workflow using Selenium and BeautifulSoup to collect and organize posts from Facebook groups. Built the process to handle dynamic content, extract relevant post information, and generate structured HTML archives for easier review and documentation.
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={340}>
+              <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+                <div className="md:col-span-2 text-neutral-400 text-sm">2025 &mdash; 2026</div>
+                <div className="md:col-span-4">
+                  <div className="text-white font-display text-xl font-bold uppercase">WEB DEVELOPER & ADMINISTRATOR</div>
+                  <div className="text-neutral-400 text-xs mt-1">CSSMoRA UIN SUNAN GUNUNG DJATI BANDUNG</div>
+                </div>
+                <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
+                  Developed and maintained the organization's website while supporting administrative and digital content activities. Contributed to improving the website's usability, content management, and overall digital presence.
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={420}>
+              <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+                <div className="md:col-span-2 text-neutral-400 text-sm">2023 — PRESENT</div>
+                <div className="md:col-span-4">
+                  <div className="text-white font-display text-xl font-bold uppercase">SOFTWARE ENGINEER</div>
+                  <div className="text-neutral-400 text-xs mt-1">SOFTWARE DEVELOPMENT PROJECTS</div>
+                </div>
+                <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
+                  Developed and contributed to 16+ software projects across web, mobile, data, GIS, IoT, and AI, working across different stages of development from planning and implementation to testing, refinement, and deployment.
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+      {/* 6.3 EXPERIENCE*/}
+        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+          <Reveal>
+            <SectionHeading
+              title="EDUCATION"
+              tag="// 04 &bull; ACADEMIC BACKGROUND"
+              subtitle="MY ACADEMIC JOURNEY AND CONTINUOUS PROFESSIONAL LEARNING."
+            />
+          </Reveal>
+
+          <div className="divide-y divide-neutral-800/80 font-mono">
+            <Reveal delay={100}>
+              <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+                <div className="md:col-span-2 text-purple-400 font-bold text-sm">2026 &mdash; PRESENT</div>
+                <div className="md:col-span-4">
+                  <div className="text-white font-display text-xl font-bold uppercase">BACHELOR OF INFORMATICS ENGINEERING</div>
+                  <div className="text-neutral-400 text-xs mt-1">SUNAN GUNUNG DJATI STATE ISLAMIC UNIVERSITY</div>
+                </div>
+                <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
+                  Pursuing a bachelor's degree in Informatics Engineering, developing a foundation across software engineering, data, information systems, and applied computing. Current GPA: 3.75 / 4.00.
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={180}>
+              <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
+                <div className="md:col-span-2 text-neutral-400 text-sm">2026</div>
+                <div className="md:col-span-4">
+                  <div className="text-white font-display text-xl font-bold uppercase">DATA SCIENTIST LEARNING PATH</div>
+                  <div className="text-neutral-400 text-xs mt-1">CODING CAMP 2026 — DBS FOUNDATION</div>
+                </div>
+                <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
+                  Completed an intensive learning program focused on data analysis, machine learning, statistical methods, and practical data science projects, with hands-on experience working through the data science workflow.
                 </div>
               </div>
             </Reveal>
@@ -191,11 +248,11 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.4 SKILLS & STACK */}
-        <section className="mb-28 md:mb-40 border-t border-neutral-800 pt-16 md:pt-24">
+        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
           <Reveal>
             <SectionHeading
               title="TECH STACK"
-              tag="// 04 &bull; TOOLKIT"
+              tag="// 05 &bull; TOOLKIT"
               subtitle="A CURATED OVERVIEW OF THE TECHNOLOGIES I USE TO BUILD AND ANALYZE DIGITAL PRODUCTS"
             />
           </Reveal>
@@ -264,10 +321,10 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.5 CAPABILITIES */}
-        <section className="mb-28 md:mb-40 border-t border-neutral-800 pt-16 md:pt-24 overflow-hidden">
+        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
           <Reveal>
             <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-8 px-4">
-              // 05 &bull; CAPABILITIES
+              // 06 &bull; CAPABILITIES
             </div>
           </Reveal>
 
