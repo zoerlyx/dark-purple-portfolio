@@ -192,7 +192,7 @@ export const AboutPage: React.FC = () => {
               <div className="py-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline">
                 <div className="md:col-span-2 text-purple-400 font-bold text-sm">2026 &mdash; PRESENT</div>
                 <div className="md:col-span-4">
-                  <div className="text-white font-display text-xl font-bold uppercase">FRONTEND ENGINEER & &amp; UI/UX DESIGNER</div>
+                  <div className="text-white font-display text-xl font-bold uppercase">FRONTEND ENGINEER &amp; UI/UX DESIGNER</div>
                   <div className="text-neutral-400 text-xs mt-1">DENGARBAIN — ACCESSIBILITY PWA</div>
                 </div>
                 <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
