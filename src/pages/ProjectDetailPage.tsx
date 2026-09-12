@@ -37,7 +37,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
                   SYSTEM ARCHITECTURE &amp; SCOPE
                 </h2>
-                <p className="text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.overview}
                 </p>
               </Reveal>
@@ -45,14 +45,14 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
 
             <div className="lg:col-span-6">
               <Reveal delay={120}>
-                <div className="font-mono text-xs uppercase tracking-widest text-neutral-400 mb-4 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-neutral-600 rounded-full" />
+                <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
                   <span>02 // CONTEXT</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
                   OPERATIONAL BACKGROUND
                 </h2>
-                <p className="text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify pt-9">
                   {project.context}
                 </p>
               </Reveal>
@@ -74,7 +74,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
                   CORE BOTTLENECKS
                 </h2>
-                <p className="text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.problem}
                 </p>
               </Reveal>
@@ -82,14 +82,14 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
 
             <div className="lg:col-span-6">
               <Reveal delay={120}>
-                <div className="font-mono text-xs uppercase tracking-widest text-neutral-400 mb-4 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 bg-neutral-600 rounded-full" />
+                <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
                   <span>04 // PROCESS &amp; EXECUTION</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
                   ENGINEERING INTERVENTIONS
                 </h2>
-                <p className="text-neutral-300 text-base md:text-lg leading-relaxed font-light">
+                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.process}
                 </p>
               </Reveal>
@@ -110,14 +110,15 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
               TECHNOLOGY INVENTORY
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 font-mono">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 font-mono ">
               {project.technologies.map((tech) => (
                 <div
                   key={tech}
                   className="p-4 rounded-sm bg-[#09090e] border border-neutral-800 flex items-center gap-2 hover:border-purple-500/40 transition-colors"
                 >
-                  <span className="w-1.5 h-1.5 bg-purple-400 rounded-full" />
-                  <span className="text-xs text-neutral-200 uppercase tracking-wider">{tech}</span>
+                  <span className="flex items-center justify-center text-center text-xs text-neutral-200 uppercase tracking-wider w-full">
+                    {tech}
+                  </span>
                 </div>
               ))}
             </div>
@@ -137,7 +138,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
               MEASURABLE OUTCOMES
             </h2>
 
-            <p className="text-neutral-300 text-lg md:text-xl font-light leading-relaxed max-w-3xl mb-12">
+            <p className="text-neutral-300 text-sm md:text-base font-mono text-justify leading-relaxed max-w-8xl mb-12">
               {project.result}
             </p>
 

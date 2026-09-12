@@ -341,3 +341,18 @@ html.lenis, html.lenis body {
 .animate-cursor-cmd {
   animation: cursorBlinkCmd 1s infinite;
 }
+
+/* Animasi Sinar Scan Melintas */
+@keyframes scanSweep {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+/* Class Utility */
+.animate-scan-sweep {
+  animation: scanSweep 2s ease-in-out infinite;
+}

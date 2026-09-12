@@ -58,7 +58,7 @@ return (
               I AM DEDICATED TO BUILDING SOFTWARE, MAKING SENSE OF DATA, AND DIGITAL EXPERIENCES THAT HAVE PURPOSE.MY WORKS SPEAKS LOUDER THAN MY WORDS—EXPLORE THE PROJECT.
             </p>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <MagneticButton
                 onClick={() => {
                   onNavigate('/work');
@@ -197,7 +197,7 @@ return (
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-12">
           <Reveal delay={100}>
-            <div className="border-t border-neutral-800 pt-6">
+            <div className="pt-6">
               <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">01</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 SOFTWARE ENGINEERING
@@ -209,7 +209,7 @@ return (
           </Reveal>
 
           <Reveal delay={180}>
-            <div className="border-t border-neutral-800 pt-6">
+            <div className="pt-6">
               <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">02</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 DATA <br />ANALYTICS
@@ -221,7 +221,7 @@ return (
           </Reveal>
 
           <Reveal delay={260}>
-            <div className="border-t border-neutral-800 pt-6">
+            <div className="pt-6">
               <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">03</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 BUSINESS INTELLIGENCE
@@ -233,7 +233,7 @@ return (
           </Reveal>
 
           <Reveal delay={340}>
-            <div className="border-t border-neutral-800 pt-6">
+            <div className="pt-6">
               <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">04</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 DATA ENGINEERING
