@@ -27,18 +27,18 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
 >
   <div>
     {tag && (
-      <div className="font-mono text-[11px] tracking-[0.25em] text-purple-400/90 uppercase mb-3 select-none flex items-center gap-2">
+      <div className="font-mono text-[11px] tracking-[0.25em] text-purple-400/90 uppercase mb-4 select-none flex items-center gap-2">
         <span className="inline-block w-1.5 h-1.5 bg-purple-500 rounded-full" />
         <span>{tag}</span>
       </div>
     )}
-    <h2 className="font-display font-extrabold uppercase section-editorial-title text-neutral-100 tracking-tight pt-2">
+    <h2 className="font-display font-extrabold uppercase section-editorial-title text-neutral-100 tracking-tight pt-4">
       {title}
     </h2>
   </div>
 
   {subtitle && (
-    <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed pt-4">
+    <p className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-wider leading-relaxed pt-6 pb-4">
       {subtitle}
     </p>
   )}

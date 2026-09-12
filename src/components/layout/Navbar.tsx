@@ -75,11 +75,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         <button
           type="button"
           onClick={() => handleLinkClick('/')}
-          className="group flex items-center gap-3 cursor-pointer text-left focus:outline-none select-none"
+          className="group flex items-center gap-4 cursor-pointer text-left focus:outline-none select-none"
           data-cursor="link"
         >
           {/* SVG Monogram Icon (Inisial F) */}
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-neutral-900/80 border border-neutral-700/50 group-hover:border-purple-500/50 transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.35)] pointer-events-none">
+          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-neutral-900/80 border border-neutral-700/50 group-hover:border-purple-500/70 transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.35)] pointer-events-none">
             <svg
               className="w-5 h-5 text-purple-400 group-hover:scale-110 transition-transform duration-300"
               viewBox="0 0 24 24"
@@ -107,18 +107,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex flex-col pointer-events-none">
             <div className="flex items-center gap-2">
               <span className="font-display font-black text-lg md:text-xl tracking-tight text-white group-hover:text-purple-300 transition-colors duration-200">
-                PORTFOLIO
+                FARDHO Z.
               </span>
-              
-              {/* Container Dot Animasi (Glow & Fade) */}
-              <div className="relative flex h-1.5 w-1.5 items-center justify-center">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-purple-500 shadow-[0_0_8px_#c084fc]" />
-              </div>
+
             </div>
             
             <span className="font-mono text-[10px] text-neutral-400 font-medium tracking-widest uppercase -mt-1">
-              FARDHO Z. / 2026
+              PORTFOLIO / 2026
             </span>
           </div>
         </button>

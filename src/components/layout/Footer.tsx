@@ -39,8 +39,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
   const navItems = [
     { label: '01 // HOME', path: '/' },
-    { label: '02 // WORK & ARCHIVE', path: '/work' },
-    { label: '03 // ABOUT & APPROACH', path: '/about' },
+    { label: '02 // WORK', path: '/work' },
+    { label: '03 // ABOUT', path: '/about' },
     { label: '04 // CONTACT', path: '/contact' },
   ];
 
@@ -58,8 +58,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Brand and Positioning */}
           <div className="md:col-span-6 flex flex-col justify-between">
             <div>
-              <div className="font-display font-extrabold text-2xl text-white tracking-tight mb-3 flex items-center gap-2">
-                <span className="w-2.5 h-2.5 bg-purple-500 rounded-full" />
+              <div className="font-display font-extrabold text-2xl text-white tracking-tight mb-3 flex items-center gap-2"> 
                 <span>FARDHO Z.</span>
               </div>
               <p className="text-neutral-400 max-w-sm uppercase tracking-wider text-[11px] leading-relaxed">

@@ -17,33 +17,36 @@ export const WorkPage: React.FC<WorkPageProps> = ({
   onSelectProject,
 }) => {
   return (
-    <div className="w-full pt-32 md:pt-40 pb-28 md:pb-36">
+    <div className="w-full pt-32 md:pt-40 pb-28 md:pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Page Header */}
-        <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-24">
+        <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-12 flex flex-col items-center justify-center text-center">
           <Reveal>
+            <div className="flex flex-col items-center">
+
             <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-              <span>02 // PROJECTS</span>
+              <span>02 // WORKS</span>
             </div>
-            <h1 className="font-body font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
+            </div>
+            <h1 className="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-8xl text-white tracking-tight leading-[0.9] uppercase">
               PROJECTS
               <br />
-              <span className="text-neutral-400">&amp; ARCHIVE.</span>
+              <span className="text-purple-400">&amp; ARCHIVE.</span>
             </h1>
-            <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-2xl leading-relaxed">
-             SELECTED CASE STUDIES AND PROJECTS EXPLORING SOFTWARE ENGINEERING, BUSINESS INTELLIGENCE, DATA ANALYTICS, AND DIGITAL PRODUCT DEVELOPMENT.            </p>
+            <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-4xl pt-10 pb-12 leading-relaxed">
+             SELECTED WORK AND PAST PROJECTS ACROSS SOFTWARE ENGINEERING, BUSINESS INTELLIGENCE, DATA ANALYTICS, AND DIGITAL PRODUCT DEVELOPMENT.</p>
           </Reveal>
         </div>
 
         {/* 5.1 SELECTED WORK SECTION */}
-        <section className="mb-28 md:mb-40">
+        <section className="mb-28 md:mb-20 ">
           <Reveal>
             <SectionHeading
               title="SELECTED WORK"
               tag="// 01 &bull; CURRENT DICIPLINE FOCUS"
-              subtitle="PROJECTS THAT DIRECTLY REFLECT THE CURRENT SOFTWARE ENGINEER & DATA ANALYST POSITIONING."
-              align="between"
+              subtitle="PROJECTS THAT BEST REPRESENT MY CURRENT FOCUS IN SOFTWARE ENGINEERING AND DATA ANALYST."
+              align="left"
             />
           </Reveal>
 
@@ -61,13 +64,13 @@ export const WorkPage: React.FC<WorkPageProps> = ({
         </section>
 
         {/* 5.2 PROJECT LIBRARY SECTION */}
-        <section className="border-t border-neutral-800 pt-16 md:pt-24">
+        <section>
           <Reveal>
             <SectionHeading
               title="PROJECT LIBRARY"
-              tag="// 02 &bull; COMPREHENSIVE ARCHIVE"
-              subtitle="&ldquo;A COLLECTION OF PROJECTS, EXPERIMENTS, EXPLORATIONS, AND THINGS I'VE BUILT OVER TIME.&rdquo;"
-              align="between"
+              tag="// 02 &bull; COMPLETE PROJECT COLLECTION"
+              subtitle="&ldquo;A BROADER COLLECTION OF PROJECTS, EXPERIMENTS, AND EXPLORATIONS ACROSS DIFFERENT AREAS OF TECHNOLOGY AND DEVELOPMENT.&rdquo;"
+              align="left"
             />
           </Reveal>
 
