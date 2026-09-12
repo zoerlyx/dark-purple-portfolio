@@ -6,14 +6,14 @@ export default function CyberHeroCard({
   statusText = 'ONLINE',
 }) {
   return (
-    <div className="max-w-7xl mx-auto px-6 md:px-12 py-24 w-full flex flex-col justify-center relative z-10 px-6 md:px-12 pt-32">
+    <div className="max-w-7xl mx-auto w-full flex flex-col justify-center relative z-10 px-6 md:px-12 pt-32 py-6">
       {/* Outer Glass Frame Wrapper */}
       <div className="relative max-w-6xl mx-auto w-full">
         {/* Soft Background Glow */}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/15 via-indigo-900/10 to-transparent rounded-3xl blur-2xl pointer-events-none -z-10" />
 
         {/* Outer Container */}
-        <div className="relative rounded-1xl bg-neutral-950/85 border border-purple-900/40 backdrop-blur-2xl p-5 sm:p-7 lg:p-9 shadow-[0_0_50px_rgba(147,51,234,0.15)] overflow-hidden transition-all duration-500 hover:border-purple-500/50 group">
+        <div className="relative rounded-1xl bg-neutral-950/85 border border-purple-900/40 backdrop-blur-2xl p-5 sm:p-7 lg:p-16 shadow-[0_0_50px_rgba(147,51,234,0.15)] overflow-hidden transition-all duration-500 hover:border-purple-500/50 group">
           
           {/* ========================================================================
               MULTI-GLITCH LINE CYBERPUNK BACKGROUND
