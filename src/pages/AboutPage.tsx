@@ -219,7 +219,7 @@ export const AboutPage: React.FC = () => {
                 <div className="md:col-span-2 text-neutral-400 text-sm">2026</div>
                 <div className="md:col-span-4">
                   <div className="text-white font-display text-xl font-bold uppercase">DATA COLLECTION & WEB SCRAPING DEVELOPER</div>
-                  <div className="text-neutral-400 text-xs mt-1">PERSPEKTIV IDN</div>
+                  <div className="text-neutral-400 text-xs mt-1">DEDUKTIF.ID</div>
                 </div>
                 <div className="md:col-span-6 text-neutral-400 text-xs font-sans leading-relaxed">
                   Developed an automated web scraping workflow using Selenium and BeautifulSoup to collect and organize posts from Facebook groups. Built the process to handle dynamic content, extract relevant post information, and generate structured HTML archives for easier review and documentation.

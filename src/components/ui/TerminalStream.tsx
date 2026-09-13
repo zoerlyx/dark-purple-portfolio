@@ -59,7 +59,7 @@ export function TerminalStream() {
       <div className="relative z-10 flex items-center justify-between pb-4 border-b border-neutral-900 font-terminal text-sm">
         <div className="flex items-center gap-2 tracking-widest text-neutral-400">
           <span className="w-2 h-2 bg-purple-500 rounded-full animate-ping" />
-          <span>LIVE_TERMINAL // C:\SYS\EXEC.EXE</span>
+          <span> C:\SYS\LIVE_TERMINAL\EXEC.EXE </span>
         </div>
         <span className="text-neutral-500 tracking-widest">PORT: 443</span>
       </div>
@@ -102,8 +102,8 @@ export function TerminalStream() {
               <span className="text-neutral-500">LATENCY: 14ms</span>
             </div>
             <p className="text-neutral-300 text-sm leading-tight">
-              Transmission logged successfully. Dispatching parameters to
-              engineering team.
+              Transmission logged successfully. Dispatching parameters to <br/>
+              zoerlyx - Fardho Z.
             </p>
           </div>
         )}

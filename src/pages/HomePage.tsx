@@ -55,7 +55,7 @@ return (
         <Reveal delay={550}>
           <div className="pt-12 md:pt-24 border-t border-neutral-800/60 flex flex-col items-center gap-8">
             <p className="font-mono text-xs md:text-sm text-neutral-300 uppercase tracking-widest max-w-xl leading-relaxed text-center mx-auto">
-              I AM DEDICATED TO BUILDING SOFTWARE, MAKING SENSE OF DATA, AND DIGITAL EXPERIENCES THAT HAVE PURPOSE.MY WORKS SPEAKS LOUDER THAN MY WORDS—EXPLORE THE PROJECT.
+              I AM DEDICATED TO BUILDING SOFTWARE, MAKING SENSE OF DATA, AND DIGITAL EXPERIENCES THAT HAVE PURPOSE. MY WORKS SPEAKS LOUDER THAN MY WORDS — EXPLORE THE PROJECT.
             </p>
 
             <div className="flex items-center gap-2">
@@ -127,7 +127,7 @@ return (
     {/* Kolom Kanan: Paragraf Teks (9 Kolom agar simetris mengisi sisa grid) */}
     <div className="lg:col-span-9 md:py-7 uppercase">
       <p className="text-neutral-400 text-base md:text-lg leading-relaxed font-mono text-justify max-w-none">
-        I&apos;m a software engineer focused on building practical software solutions with a strong interest in data. My work combines software development, data analysis, and engineering to turn problems into clear, useful solutions.
+        I&apos;m a software engineer focused on building practical software solutions with a strong interest in data. My work combines software development, data analysis, and engineering to turn problems into clear and useful solutions.
       </p>
       
       <p className="mt-6 text-neutral-400 text-base md:text-lg leading-relaxed font-mono text-justify max-w-none">
@@ -166,7 +166,7 @@ return (
 
         {/* View All Work CTA */}
         <Reveal delay={200}>
-          <div className="mt-16 md:py-12 text-center">
+          <div className="mt-12 md:py-12 text-center">
             <MagneticButton
               onClick={() => {
                 onNavigate('/work');
@@ -262,7 +262,7 @@ return (
       </h2>
 
       <p className="font-mono text-xs sm:text-sm text-neutral-400 tracking-wider uppercase max-w-lg mx-auto mb-10 leading-normal">
-        AVAILABLE FOR COLLABORATION, PROJECTS, AND SELECTED OPPORTUNITIES.
+        AVAILABLE FOR COLLABORATION, PROJECTS, AND NEW OPPORTUNITIES.
       </p>
 
       <div className="flex justify-center md:py-24">

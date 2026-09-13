@@ -32,7 +32,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-8xl text-white tracking-tight leading-[0.9] uppercase">
               PROJECTS
               <br />
-              <span className="text-purple-400">&amp; ARCHIVE.</span>
+              <span className="text-purple-400">&amp; LIBRARY.</span>
             </h1>
             <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-4xl pt-10 pb-12 leading-relaxed">
              SELECTED WORK AND PAST PROJECTS ACROSS SOFTWARE ENGINEERING, BUSINESS INTELLIGENCE, DATA ANALYTICS, AND DIGITAL PRODUCT DEVELOPMENT.</p>
@@ -68,8 +68,8 @@ export const WorkPage: React.FC<WorkPageProps> = ({
           <Reveal>
             <SectionHeading
               title="PROJECT LIBRARY"
-              tag="// 02 &bull; COMPLETE PROJECT COLLECTION"
-              subtitle="&ldquo;A BROADER COLLECTION OF PROJECTS, EXPERIMENTS, AND EXPLORATIONS ACROSS DIFFERENT AREAS OF TECHNOLOGY AND DEVELOPMENT.&rdquo;"
+              tag="// 02 &bull; PROJECT ACROSS COLLECTION"
+              subtitle="A BROADER COLLECTION OF PROJECTS, EXPERIMENTS, AND EXPLORATIONS ACROSS DIFFERENT AREAS OF TECHNOLOGY AND DEVELOPMENT."
               align="left"
             />
           </Reveal>
