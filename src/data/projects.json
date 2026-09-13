@@ -177,8 +177,8 @@
     "categories": ["DATA"],
     "year": 2026,
     "featured": true,
-    "description": "Edge-deployed convolutional neural network pipeline for automated municipal asphalt distress categorization and roadway safety audit.",
-    "role": "Computer Vision & Data Specialist",
+    "description": "Interactive data analytics dashboard for exploring, evaluating, and visualizing a road damage dataset through structured data analysis and statistical insights.",
+    "role": "Data Analyst & Dashboard Developer",
     "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop",
@@ -192,18 +192,35 @@
     "Plotly"
   ],
     "links": {
-      "github": "https://github.com/example/road-vision-ai",
-      "demo": "https://demo.roadvision.io"
+      "github": "https://github.com/zoerlyx/streamlit-dashboard-road-sentry",
+      "demo": "https://dashboard-road-sentry-gnb4nytjo5fhnj72to3xak.streamlit.app/"
     },
-    "overview": "Road Vision converts standard dashcam video feeds into geospatial vector layers detailing pavement cracks, potholes, and worn lane markings for municipal public works departments.",
-    "context": "Annual manual road condition surveying previously required months of visual car drives and hundreds of human inspection hours.",
-    "problem": "Variable lighting conditions, rain puddles, shadows from trees, and optical blur caused high false positive rates in standard image detection models.",
-    "process": "Trained custom multi-scale convolutional segmentation backbones on 45,000 labeled road segments, augmented with synthetic weather perturbations and compiled via TensorRT for edge hardware.",
-    "result": "Achieved 92.4% mean Average Precision (mAP) at 48 FPS on vehicle-mounted edge compute units.",
+    "overview": "Road Vision is an interactive data analytics dashboard developed to explore, analyze, and validate a road damage dataset. The project combines data wrangling, data quality assessment, exploratory data analysis, feature engineering, A/B testing, and statistical visualization into a single analytical workflow. The dashboard transforms raw and processed data into structured insights that make the characteristics and quality of the dataset easier to understand.",
+    "context": "Road damage datasets contain various attributes that need to be examined before they can be interpreted effectively. Beyond identifying the types of damage present, it is important to understand the distribution of objects, the quality of the collected data, and additional characteristics that can be derived from existing annotations. Road Vision was developed as an interactive environment to bring these analytical stages together and provide a clearer view of the dataset through visual exploration and statistical summaries.",
+    "problem": "Analyzing a labeled image dataset manually can make it difficult to identify patterns, evaluate data quality, and understand the characteristics of annotated objects at scale. Basic class distributions alone also do not provide enough context to describe the dataset comprehensively. The challenge was to build an analytical workflow that could assess data quality, explore dataset characteristics, generate meaningful additional features, and compare analytical approaches through measurable experiments.",
+    "process": "The process began with data wrangling to prepare and structure the dataset for analysis. A Data Quality Assessment was then performed to evaluate data completeness and integrity, including image availability, label availability, and file validity. Exploratory Data Analysis was used to examine damage class distribution, object frequency, dataset composition, and descriptive statistics. Feature engineering was applied to bounding box annotations to derive object area and classify damage severity into Small, Medium, and Large categories. An A/B testing approach was then used to compare analysis based only on damage class information with analysis that also incorporated the generated severity features. The entire workflow was presented through an interactive Streamlit dashboard using Plotly for data visualization.",
+    "result": "The analysis produced a structured view of the dataset, showing that it contains 2,009 images and 4,737 annotated objects across three damage classes. The dataset achieved a 100% Data Quality Score, with no missing images, missing labels, or corrupted image files identified. Crack was the most dominant damage category, followed by Pothole and Manhole. The feature engineering process added severity information that provided a deeper analytical perspective than class information alone, while the interactive dashboard made the resulting findings easier to explore and interpret.",
     "metrics": [
-      { "label": "Inference Speed", "value": "48 FPS" },
-      { "label": "mAP @ 0.5", "value": "92.4%" },
-      { "label": "Survey Time Saved", "value": "85%" }
+      {
+        "label": "Total Images",
+        "value": "2,009",
+        "description": "Total number of images analyzed in the dataset."
+      },
+      {
+        "label": "Annotated Objects",
+        "value": "4,737",
+        "description": "Total number of annotated road damage objects."
+      },
+      {
+        "label": "Damage Classes",
+        "value": "3",
+        "description": "Three road damage categories analyzed in the dataset."
+      },
+      {
+        "label": "Data Quality Score",
+        "value": "100%",
+        "description": "Overall score obtained from the Data Quality Assessment."
+      }
     ]
   },
   {
