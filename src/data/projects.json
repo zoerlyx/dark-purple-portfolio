@@ -224,51 +224,90 @@
     ]
   },
   {
-    "slug": "synthetix-analytics",
-    "title": "Synthetix Analytics",
-    "category": "Data Analytics & Pipeline",
-    "categories": ["DATA", "BI"],
-    "year": 2024,
+    "slug": "syncteam-ai",
+    "title": "SyncTeam-AI",
+    "category": "AI-Powered Software",
+    "categories": ["SOFTWARE",
+      "AI"],
+    "year": 2026,
     "featured": true,
-    "description": "Predictive customer churn and lifetime value modeling engine processing streaming subscription billing metrics.",
-    "role": "Data Analyst & Backend Engineer",
+    "description": "An AI-powered productivity platform for developer teams that combines project management, collaboration, productivity analytics, and intelligent planning within a unified workspace.",
+    "role": "Full-stack Developer & AI Integration",
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["Python", "Pandas", "Scikit-Learn", "PostgreSQL", "Apache Airflow", "Streamlit"],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Groq API",
+      "Llama 3.3 70B",
+      "Zod",
+      "Hello Pangea DnD",
+      "Vercel"
+    ],
     "links": {
-      "github": "https://github.com/example/synthetix-analytics",
-      "demo": ""
+      "github": "https://github.com/zoerlyx/syncteam-ai",
+      "demo": "https://syncteam-ai.vercel.app/"
     },
-    "overview": "Synthetix Analytics is a modular data pipeline that extracts customer behavioral signals from product events, trains random forest propensity models, and pushes actionable segment lists into CRM workflows.",
-    "context": "Growth teams lacked early warnings on declining user engagement before customer contract renewal windows.",
-    "problem": "Feature stores were scattered across raw logs and un-indexed application databases, requiring days of manual SQL scripting for every ad-hoc cohort analysis.",
-    "process": "Implemented automated Airflow DAGs that compute rolling 7, 30, and 90-day engagement aggregates into a centralized feature mart with daily churn risk scoring.",
-    "result": "Allowed customer success reps to intervene on accounts with 84% true-positive churn prediction accuracy, recovering significant annual recurring revenue.",
+    "overview": "SyncTeam-AI is a project management and collaboration platform designed specifically for software development teams. It combines project planning, task management, team collaboration, productivity analytics, and AI assistance within a single workspace. AI is integrated directly into the planning workflow to transform high-level project requirements into structured roadmaps, actionable tasks, and task ownership recommendations.",
+    "context": "Software development teams often handle project planning, task distribution, progress tracking, and team coordination across multiple tools. SyncTeam-AI was developed to bring these workflows into one platform while using team profiles, skills, and activity data to provide additional context for planning and task assignment.",
+    "problem": "Turning high-level project requirements into actionable development tasks can be time-consuming and often requires extensive manual planning. Task assignment can also depend heavily on individual judgment without considering team members' skills, profiles, and recent activity in a structured way. The challenge was to build a platform that could simplify project planning, organize development work, and provide more context-aware task assignment recommendations.",
+    "process": "Development began with a full-stack foundation using Next.js, React, TypeScript, Tailwind CSS, and Supabase for authentication, database management, and user data. The project management layer was then developed to handle projects, tasks, activities, developer profiles, and team collaboration. Task management is presented through a Kanban-style dashboard with drag-and-drop interaction, allowing teams to organize and track work visually. The AI layer was integrated through the Groq API and Llama 3.3 70B to generate task breakdowns, project roadmaps, and task ownership recommendations based on project requirements, team skills, profiles, and activity. The platform was further extended with an XP system, team leaderboard, and productivity reports to track individual and team contributions.",
+    "result": "The result is a unified project management platform that combines AI-assisted planning with collaborative development workflows. Teams can manage projects and tasks through a Kanban dashboard, generate structured roadmaps and task breakdowns, and receive task assignment recommendations based on team capabilities. XP, leaderboard, and productivity reporting features provide an additional layer for monitoring contribution and team activity.",
     "metrics": [
-      { "label": "Model Accuracy", "value": "84%" },
-      { "label": "Daily Pipeline", "value": "100% On-time" }
+      {
+        "label": "AI Capabilities",
+        "value": "3",
+        "description": "Task breakdown, roadmap generation, and task assignment recommendation."
+      },
+      {
+        "label": "Task Management",
+        "value": "Kanban",
+        "description": "Project tasks are organized through a visual Kanban dashboard with drag-and-drop interaction."
+      },
+      {
+        "label": "AI Model",
+        "value": "Llama 3.3 70B",
+        "description": "Large language model used to power the platform's AI-assisted planning features."
+      },
+      {
+        "label": "Deployment",
+        "value": "Vercel",
+        "description": "The application is deployed using Vercel."
+      }
     ]
   },
   {
-    "slug": "pulsar-terminal",
-    "title": "Pulsar Terminal",
-    "category": "Developer Tooling",
-    "categories": ["SOFTWARE", "CLIENT"],
-    "year": 2024,
-    "featured": false,
-    "description": "Ultra-fast headless terminal-based database query viewer and schema visualizer for terminal artisans.",
-    "role": "Systems Developer",
+    "slug": "road-sentry",
+    "title": "Road-Sentry",
+    "category": "AI-Powered Software",
+    "categories": ["SOFTWARE", "AI"],
+    "year": 2026,
+    "featured": true,
+    "description": "An AI-powered web platform for reporting and monitoring road damage, combining automated image detection, geographic mapping, priority assessment, and report tracking.",
+    "role": "Project Manager, Data Preparation & QA",
     "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["Rust", "Ratatui", "SQLx", "SQLite", "PostgreSQL"],
+    "technologies": [
+      "React",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "PostgreSQL",
+      "YOLOv8",
+      "OpenStreetMap"
+    ],
     "links": {
-      "github": "https://github.com/example/pulsar-terminal",
-      "demo": ""
+      "github": "https://github.com/zoerlyx/road-sentry-app",
+      "demo": "https://road-sentry-frontend-d2ws.vercel.app/"
     },
     "overview": "Pulsar is a lightweight TUI (Terminal User Interface) database client designed for rapid schema inspection and ad-hoc SQL experimentation across production clusters via SSH tunnels.",
     "context": "Heavy desktop GUI database tools take seconds to launch and consume gigabytes of RAM during remote debug sessions.",
