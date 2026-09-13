@@ -37,4 +37,4 @@ export type ProjectCategory =
   | 'AI'
   | 'UI/UX'
   | 'MOBILE'
-  | 'EXPERIMENTAL';
+  | 'CLIENT';

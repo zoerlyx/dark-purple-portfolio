@@ -17,7 +17,7 @@ const CATEGORIES: ProjectCategory[] = [
   'AI',
   'UI/UX',
   'MOBILE',
-  'EXPERIMENTAL',
+  'CLIENT',
 ];
 
 export const ProjectLibrary: React.FC<ProjectLibraryProps> = ({

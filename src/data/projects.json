@@ -58,72 +58,124 @@
     ]
   },
   {
-    "slug": "trackee",
-    "title": "Trackee",
-    "category": "Software Engineering",
-    "categories": ["SOFTWARE", "UI/UX"],
+    "slug": "facebook-group-scraper",
+    "title": "Facebook Group Scraper",
+    "category": "Data Engineering",
+    "categories": ["DATA", "CLIENT"],
     "year": 2025,
     "featured": true,
-    "description": "Minimalist high-frequency engineering asset telemetry and system observability client built for distributed microservices.",
-    "role": "Lead Full-Stack Engineer",
+    "description": "An automated data collection system that extracts posts, comments, and time-related metadata from Facebook Groups, then processes the collected data into structured HTML, Excel, and CSV outputs.",
+    "role": "Data Collection & Automation Engineer",
     "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Go", "Redis", "WebSockets"],
+    "technologies": [
+      "Python",
+      "Selenium",
+      "BeautifulSoup",
+      "Google Colab",
+      "HTML",
+      "Excel",
+      "CSV"
+    ],
     "links": {
-      "github": "https://github.com/example/trackee-core",
-      "demo": "https://trackee.dev"
+      "github": "https://github.com/zoerlyx/fb-group-scraping",
+      "demo": ""
     },
-    "overview": "Trackee is an opinionated telemetry monitor engineered to strip away the visual noise of traditional enterprise APMs, focusing purely on critical latency spikes, memory pressure, and distributed trace trees.",
-    "context": "Modern cloud monitoring dashboards have become bloated with dozens of redundant graphs, distracting on-call engineers during high-stress production degradation incidents.",
-    "problem": "High-throughput metrics streams often crash client browsers due to excessive DOM nodes and un-throttled WebSocket re-renders.",
-    "process": "Designed a custom canvas-based sparkline engine combined with virtualized event list rendering and binary WebSocket serialization over Go workers.",
-    "result": "Maintained continuous 60fps UI performance under 15,000 metrics per second ingestion, with zero browser memory leaks over multi-day monitoring sessions.",
+    "overview": "Facebook Group Scraper is a data collection project designed to automatically collect posts and comments from three Facebook Groups. The system extracts post content along with its related comments, processes date metadata, and organizes the collected data into multiple output formats: HTML for readable and navigable archives, and Excel and CSV for further data processing and analysis.",
+    "context": "Facebook Groups generate large volumes of posts and comments that continuously grow over time, making them difficult to collect and document manually. This project was developed to automate the data collection process across three Facebook Groups with relatively large member bases. In addition to post and comment content, publication timestamps are preserved and normalized to maintain consistent temporal context across the collected data.",
+    "problem": "Manually collecting posts and comments is time-consuming, difficult to perform consistently, and inefficient when dealing with large volumes of data. The information displayed by Facebook does not always provide dates in a consistent absolute format, while the relationship between posts and comments needs to be preserved to retain the context of each discussion. The challenge was to build a workflow that could automatically load pages, extract posts and their comments, normalize time metadata, and produce outputs suitable for both archiving and data analysis.",
+    "process": "The process began by accessing each Facebook Group using Selenium to automate the browser and progressively load posts. Once the content was available, BeautifulSoup was used to extract post information, comments, and relevant metadata. The system then processed post publication dates into Post_Date_Absolute and comment dates into Comment_Date_Absolute to ensure consistent time representation. Post and comment data were structured so that each comment remained associated with its source post. After the collection and parsing stages were completed, the data was transformed into multiple output formats: HTML as a readable and navigable archive, and Excel and CSV as tabular formats for further processing and analysis.",
+    "result": "The final result is a structured collection of archives and datasets from three Facebook Groups containing posts, comments, and their respective time metadata. The HTML output provides a readable and navigable representation of the collected archive, while Excel and CSV provide tabular data that can be used for further processing and analysis. The normalization of Post_Date_Absolute and Comment_Date_Absolute also preserves temporal context, making it easier to analyze the relationship between each post and the commenting activity associated with it.",
     "metrics": [
-      { "label": "Frame Rate", "value": "60 fps" },
-      { "label": "Ingestion Rate", "value": "15k/sec" },
-      { "label": "Client Footprint", "value": "< 45MB" }
+          {
+            "label": "Facebook Groups",
+            "value": "3",
+            "description": "Three Facebook Groups processed through the data collection workflow."
+          },
+          {
+            "label": "Data Collected",
+            "value": "Posts + Comments",
+            "description": "The system collects posts together with their associated comments."
+          },
+          {
+            "label": "Date Metadata",
+            "value": "Absolute",
+            "description": "Post and comment dates are normalized into Post_Date_Absolute and Comment_Date_Absolute."
+          },
+          {
+            "label": "Output Formats",
+            "value": "3",
+            "description": "Data is available in HTML, Excel, and CSV formats."
+          }
     ]
   },
   {
-    "slug": "kelola",
-    "title": "Kelola",
+    "slug": "dengarbain",
+    "title": "DengarBain",
     "category": "Software Development",
     "categories": ["SOFTWARE", "MOBILE"],
-    "year": 2025,
+    "year": 2026,
     "featured": true,
-    "description": "Offline-first inventory management and financial cashflow tracker for mid-market logistics operators.",
-    "role": "Full-Stack Software Engineer",
+    "description": "A Progressive Web App for learning Hadith Arbain, designed with an accessibility-first approach to help visually impaired users read, listen to, and memorize hadith independently.",
+    "role": "Frontend Engineer, UI/UX & Accessibility",
     "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["React Native", "TypeScript", "Node.js", "PostgreSQL", "SQLite", "Tailwind"],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "IndexedDB",
+      "PWA",
+      "Cloudflare R2"
+    ],
     "links": {
-      "github": "https://github.com/example/kelola-app",
-      "demo": ""
+      "github": "https://github.com/Irs622/Dengarbain",
+      "demo": "https://dengarbain.ilhapress.com/"
     },
-    "overview": "Kelola enables distributed field dispatchers and warehouse managers to record stock movements and cash exchanges even in subterranean or remote locations with zero cellular connectivity.",
-    "context": "Warehouse personnel frequently operate in steel-reinforced structures where cellular signals drop completely, resulting in manual paper logs that get lost.",
-    "problem": "Sync conflicts were pervasive when multiple warehouse operators modified inventory items offline and reconnected simultaneously.",
-    "process": "Engineered a conflict-free replicated data type (CRDT) sync protocol running on SQLite locally, resolving state automatically upon network restoration.",
-    "result": "Completely eliminated lost transaction logs and supported continuous offline shifts with zero manual data reconciliation required.",
+    "overview": "DengarBain is a Progressive Web App for learning Hadith Arbain, developed with a strong focus on accessibility for visually impaired users. The application provides 42 Hadith Arbain along with learning features, search, memorization progress tracking, settings, help, and offline support. As a web-based multiplatform application, DengarBain is designed to provide a responsive learning experience across both desktop and mobile devices.",
+    "context": "Learning hadith requires not only complete and accessible content, but also an interaction experience that can accommodate different accessibility needs. DengarBain was developed to provide a more independent learning experience for visually impaired users by using a simple interface structure, semantic HTML, screen reader support, and interaction patterns designed with assistive technologies such as TalkBack in mind. The application also adopts the PWA approach so that learning materials and progress can remain accessible more flexibly across different usage conditions.",
+    "problem": "Many web-based learning platforms do not adequately consider how visually impaired users navigate interfaces, understand page structures, and interact with application elements through screen readers. In addition, an effective learning experience requires a practical way to track memorization progress and continue learning when an internet connection is unavailable. The challenge was to build a simple and responsive interface while ensuring that every important part of the application remained understandable and operable through accessible interaction patterns.",
+    "process": "Development began with defining the interface structure and learning flow, followed by implementation using Next.js, React, TypeScript, and Tailwind CSS. Accessibility was incorporated through semantic HTML, accessible labels, clear navigation structures, and interaction patterns optimized for screen readers and TalkBack. Learning features include hadith search, hadith details, memorization status, learning progress, settings, help, and application information. User progress is stored locally using IndexedDB to support offline learning. For synchronization, the application uses Next.js route handlers, Prisma, PostgreSQL, and device-based identification to connect local data with server-side storage. Supporting application assets are distributed through Cloudflare R2 and a CDN.",
+    "result": "The result is an accessible Hadith Arbain learning PWA that provides a responsive experience across different devices and is designed with visually impaired users in mind. The application delivers 42 hadith along with search and memorization progress tracking, while its accessibility-first approach makes interface elements easier to understand and navigate using screen readers. IndexedDB allows learning progress to remain available locally during offline use, while the synchronization mechanism provides a way to maintain user data between local storage and the server.",
     "metrics": [
-      { "label": "Sync Success Rate", "value": "100%" },
-      { "label": "Offline Shifts", "value": "8+ hrs" },
-      { "label": "Conflict Resolution", "value": "Auto" }
+      {
+        "label": "Hadith",
+        "value": "42",
+        "description": "Hadith Arbain available for learning."
+      },
+      {
+        "label": "Platform",
+        "value": "PWA",
+        "description": "A responsive web application designed for cross-device use."
+      },
+      {
+        "label": "Accessibility",
+        "value": "Screen Reader",
+        "description": "The interface is designed to support navigation and interaction through screen readers."
+      },
+      {
+        "label": "Offline Storage",
+        "value": "IndexedDB",
+        "description": "Learning progress is stored locally to support offline use."
+      }
     ]
   },
   {
     "slug": "road-vision",
     "title": "Road Vision",
-    "category": "Computer Vision & AI",
-    "categories": ["AI", "DATA"],
-    "year": 2025,
+    "category": "Data Analytics",
+    "categories": ["DATA"],
+    "year": 2026,
     "featured": true,
     "description": "Edge-deployed convolutional neural network pipeline for automated municipal asphalt distress categorization and roadway safety audit.",
     "role": "Computer Vision & Data Specialist",
@@ -132,7 +184,13 @@
       "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["Python", "PyTorch", "OpenCV", "TensorRT", "YOLOv8", "PostGIS"],
+    "technologies": [
+    "Python",
+    "Streamlit",
+    "Pandas",
+    "NumPy",
+    "Plotly"
+  ],
     "links": {
       "github": "https://github.com/example/road-vision-ai",
       "demo": "https://demo.roadvision.io"
@@ -181,7 +239,7 @@
     "slug": "pulsar-terminal",
     "title": "Pulsar Terminal",
     "category": "Developer Tooling",
-    "categories": ["SOFTWARE", "EXPERIMENTAL"],
+    "categories": ["SOFTWARE", "CLIENT"],
     "year": 2024,
     "featured": false,
     "description": "Ultra-fast headless terminal-based database query viewer and schema visualizer for terminal artisans.",
@@ -237,7 +295,7 @@
     "slug": "latent-space",
     "title": "Latent Space Explorer",
     "category": "Generative Art & Audio",
-    "categories": ["EXPERIMENTAL", "AI"],
+    "categories": ["CLIENT", "AI"],
     "year": 2023,
     "featured": false,
     "description": "High-dimensional vector embedding visualizer mapping generative audio spectrograms into 3D geometric manifold clusters.",
