@@ -91,8 +91,7 @@ export const ProjectLibrary: React.FC<ProjectLibraryProps> = ({
   const filteredProjects = projects.filter((p) => {
     if (activeCategory === 'ALL') return true;
     return (
-      p.categories.includes(activeCategory) ||
-      p.category.toUpperCase().includes(activeCategory)
+      p.categories.includes(activeCategory)
     );
   });
 
@@ -103,8 +102,7 @@ export const ProjectLibrary: React.FC<ProjectLibraryProps> = ({
     } else {
       acc[cat] = projects.filter(
         (p) =>
-          p.categories.includes(cat) ||
-          p.category.toUpperCase().includes(cat)
+          p.categories.includes(cat) 
       ).length;
     }
     return acc;
