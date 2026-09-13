@@ -748,6 +748,60 @@
         "description": "Covered system architecture, database design, business requirements, and quality assurance."
       }
     ]
+  },
+  {
+    "slug": "student-walker",
+    "title": "Student Walker",
+    "category": "Service Platform",
+    "categories": ["SOFTWARE", "MOBILE"],
+    "year": 2025,
+    "featured": false,
+    "description": "A student service marketplace designed to connect university students with on-demand campus assistance, including food delivery, item pickup, and everyday errands.",
+    "role": "Project Manager",
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Node.js",
+      "Express",
+      "WebSocket",
+      "Multer",
+      "MySQL",
+      "CORS",
+      "dotenv"
+    ],
+    "links": {
+      "github": "https://github.com/zoerlyx/student-walker-frontend",
+      "demo": ""
+    },
+    "overview": "Student Walker is a campus-oriented service marketplace that connects university students who need assistance with students who can provide on-demand services. The platform supports practical campus needs such as food delivery, item pickup, and everyday errands.",
+    "context": "University students often need assistance with everyday tasks while managing academic schedules and other commitments. At the same time, other students may have the availability to provide these services. Student Walker was designed as a service marketplace that connects both sides within a university environment.",
+    "problem": "Students lack a centralized platform for requesting and providing simple on-demand assistance around campus. The challenge was to coordinate the development of a service platform capable of handling service requests, real-time communication, file uploads, and database interactions within a student-oriented marketplace.",
+    "process": "As Project Manager, the work involved coordinating the project scope, requirements, development activities, and technical implementation. The backend was structured using Node.js and Express as a RESTful API, with WebSocket for real-time communication, Multer for file uploads, MySQL for database integration, and common Express middleware including CORS and dotenv for application configuration and request handling.",
+    "result": "The result is a student-focused service marketplace backend designed to support campus assistance services through RESTful APIs, real-time communication, file uploads, and persistent database integration. The project demonstrates coordination of both product requirements and technical development as a Project Manager.",
+    "metrics": [
+      {
+        "label": "Project Manager",
+        "value": "Primary Role",
+        "description": "Responsible for coordinating project requirements, development activities, and overall delivery."
+      },
+      {
+        "label": "RESTful API",
+        "value": "Backend Architecture",
+        "description": "Built using Node.js and Express to provide the core backend services."
+      },
+      {
+        "label": "WebSocket",
+        "value": "Real-Time Communication",
+        "description": "Supports real-time communication within the platform."
+      },
+      {
+        "label": "MySQL",
+        "value": "Database",
+        "description": "Provides persistent database integration for application data."
+      }
+    ]
   }
 ]
 
