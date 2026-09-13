@@ -662,6 +662,51 @@
         "description": "Uses spoken player responses for vocabulary challenges and pronunciation evaluation."
       }
     ]
+  },
+  {
+    "slug": "shoot-the-pumpkin",
+    "title": "Shoot the Pumpkin",
+    "category": "Game Development",
+    "categories": ["SOFTWARE", "CLIENT"],
+    "year": 2025,
+    "featured": false,
+    "description": "A first-person shooting game developed in Unity where players navigate a 360-degree environment, shoot randomly spawning pumpkins within a fixed time limit, and avoid non-target objects that apply score penalties.",
+    "role": "Game Developer",
+    "image": "https://images.unsplash.com/photo-1577083288073-40892c0860a4?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1577083288073-40892c0860a4?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "FPS"
+    ],
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "overview": "Shoot the Pumpkin is a first-person shooting game designed around fast target recognition and precision-based gameplay. Players move through a 360-degree environment and must identify and shoot randomly spawning pumpkins before the time limit expires while avoiding non-target objects such as black rabbits and bats.",
+    "context": "Reaction-based gameplay can be used as an interactive environment for observing attention, response speed, and target recognition. The game was developed as a client project for psychological research, with gameplay mechanics designed around visual attention and cognitive focus.",
+    "problem": "The research required an interactive task capable of creating controlled situations where players had to continuously observe their surroundings, identify specific targets, and respond within a limited amount of time. The challenge was to translate these requirements into an engaging first-person gameplay experience while maintaining measurable scoring and penalty mechanics.",
+    "process": "Development began with the implementation of a 360-degree first-person environment and player camera controls. Target spawning mechanics were then introduced to generate pumpkins at random positions, followed by real-time scoring, time limits, and penalties for incorrect targets. Two difficulty modes were implemented with different map layouts and increasing gameplay challenges.",
+    "result": "The result is a first-person shooting game that provides a controlled environment for measuring visual attention, reaction time, and cognitive focus. Its timed scoring system, target penalties, and multiple difficulty modes create distinct gameplay conditions suitable for psychological research activities.",
+    "metrics": [
+      {
+        "label": "2 Difficulty Modes",
+        "value": "Gameplay Variation",
+        "description": "Includes easy and hard modes with distinct map layouts and increasing challenges."
+      },
+      {
+        "label": "360° FPS",
+        "value": "Core Gameplay",
+        "description": "Uses a first-person environment requiring continuous visual scanning and target tracking."
+      },
+      {
+        "label": "Timed Scoring",
+        "value": "Research Mechanic",
+        "description": "Combines time limits, target accuracy, and penalty mechanics to support attention and reaction-based evaluation."
+      }
+    ]
   }
 
 ]
