@@ -309,14 +309,32 @@
       "github": "https://github.com/zoerlyx/road-sentry-app",
       "demo": "https://road-sentry-frontend-d2ws.vercel.app/"
     },
-    "overview": "Pulsar is a lightweight TUI (Terminal User Interface) database client designed for rapid schema inspection and ad-hoc SQL experimentation across production clusters via SSH tunnels.",
-    "context": "Heavy desktop GUI database tools take seconds to launch and consume gigabytes of RAM during remote debug sessions.",
-    "problem": "Standard CLI tools like psql lack interactive scrollable tabular pagination, auto-completion, and inline JSON folding.",
-    "process": "Built with Rust and the Ratatui framework, compiling into a zero-dependency 8MB static binary with native connection pooling.",
-    "result": "Startup in under 12 milliseconds with seamless remote server execution.",
+    "overview": "RoadSentry is an AI-powered web platform that connects public road damage reporting with automated image detection, geographic visualization, priority assessment, and report monitoring. Users can submit road damage reports with photos and locations, while the system processes the submitted images to identify damage types and provides supporting information for verification and prioritization.",
+    "context": "Road damage reporting requires more than simply collecting photos and locations. Reports need to be prepared, validated, analyzed, mapped, and monitored so that the resulting information can support a more structured response. RoadSentry was developed as an integrated platform that connects public reporting with AI-assisted analysis and geographic monitoring.",
+    "problem": "Road damage reports can become difficult to verify and prioritize when information is collected without consistent data preparation, image analysis, and geographic context. The project therefore required coordinated work across dataset preparation, system development, AI integration, quality assurance, presentation, and deployment to ensure that the complete reporting workflow could operate reliably.",
+    "process": "The project involved coordinating development activities from the preparation stage through deployment. Data preparation included collecting, organizing, cleaning, and processing the road damage dataset used for AI development. The AI component used YOLOv8 to detect pothole, crack, and manhole classes from submitted images. The platform also incorporated geographic information through OpenStreetMap and a priority scoring mechanism based on damage severity, surrounding road conditions, nearby facilities, report frequency, and report age. As Project Manager, the role covered project coordination, dataset preparation and processing, pitching and presentation, quality assurance, workflow validation, and involvement during the deployment stage. QA focused on verifying the end-to-end reporting flow, AI results, data consistency, and overall system readiness.",
+    "result": "The project resulted in a working AI-powered road damage reporting platform that connects public reporting, automated image analysis, geographic visualization, priority assessment, and report tracking. The completed workflow allows submitted reports to be processed and visualized with supporting AI and location information, while the project coordination, dataset preparation, pitching, QA, and deployment involvement helped ensure the system was properly prepared and validated before delivery.",
     "metrics": [
-      { "label": "Binary Size", "value": "8.2 MB" },
-      { "label": "Boot Time", "value": "< 12 ms" }
+      {
+        "label": "AI Model",
+        "value": "YOLOv8",
+        "description": "Computer vision model used to detect road damage from submitted images."
+      },
+      {
+        "label": "Damage Classes",
+        "value": "3",
+        "description": "Pothole, Crack, and Manhole."
+      },
+      {
+        "label": "GIS",
+        "value": "OpenStreetMap",
+        "description": "Used to visualize and provide geographic context for road damage reports."
+      },
+      {
+        "label": "Core Scope",
+        "value": "End-to-End",
+        "description": "Project coordination covered dataset preparation, pitching, QA, workflow validation, and deployment involvement."
+      }
     ]
   },
   {
