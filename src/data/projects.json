@@ -802,6 +802,51 @@
         "description": "Provides persistent database integration for application data."
       }
     ]
+  },
+  {
+    "slug": "iot-motion-analyzer",
+    "title": "IoT Motion Analyzer",
+    "category": "IoT & Embedded Systems",
+    "categories": ["SOFTWARE"],
+    "year": 2026,
+    "featured": false,
+    "description": "An IoT-based physics experiment device designed to measure motion characteristics such as speed, acceleration, and friction using embedded sensors and real-time measurements.",
+    "role": "IoT Developer",
+    "image": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Arduino",
+      "ESP32",
+      "Ultrasonic Sensor"
+    ],
+    "links": {
+      "github": "https://github.com/zoerlyx/physics-iot-inclined-plane",
+      "demo": ""
+    },
+    "overview": "IoT Motion Analyzer is an embedded IoT device developed for physics experiments involving motion analysis. The system uses sensors to capture real-time measurements that can be used to analyze physical characteristics such as speed, acceleration, and friction.",
+    "context": "Physics experiments involving motion often require repeated manual measurements, which can make data collection time-consuming and less consistent. IoT and embedded technologies provide an opportunity to automate measurement processes and capture physical motion in real time.",
+    "problem": "Manual measurement of motion variables can introduce limitations in measurement frequency, consistency, and observation. The challenge was to develop a compact embedded system capable of collecting motion-related measurements automatically during physics experiments.",
+    "process": "Development focused on combining an ESP32-based embedded platform with an ultrasonic sensor for motion measurement. The device was designed to capture physical movement and provide real-time measurements that could be used to analyze speed, acceleration, and friction during experimental activities.",
+    "result": "The result is an IoT-based physics experiment device that enables automated and real-time motion measurement using embedded hardware and sensors, providing a more practical approach to collecting data during physics experiments.",
+    "metrics": [
+      {
+        "label": "ESP32",
+        "value": "Embedded Platform",
+        "description": "Serves as the main embedded controller for the motion measurement system."
+      },
+      {
+        "label": "Ultrasonic Sensor",
+        "value": "Motion Measurement",
+        "description": "Used to capture distance-related measurements for analyzing physical motion."
+      },
+      {
+        "label": "Real-Time",
+        "value": "Measurement Method",
+        "description": "Captures motion-related measurements during physics experiments."
+      }
+    ]
   }
 ]
 
