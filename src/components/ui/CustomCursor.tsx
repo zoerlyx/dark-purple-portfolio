@@ -68,8 +68,8 @@ export const CustomCursor: React.FC = () => {
     // Style Label Text inside Ring
     Object.assign(labelText.style, {
       color: '#ffffff',
-      fontSize: '10px',
-      fontWeight: '700',
+      fontSize: '12px',
+      fontWeight: '600',
       letterSpacing: '1px',
       fontFamily: 'monospace',
       textTransform: 'uppercase',
@@ -146,8 +146,8 @@ export const CustomCursor: React.FC = () => {
       const navItem = target.closest('nav a, header a, [data-cursor="link"]');
 
       if (projectCard) {
-        ring.style.width = '72px';
-        ring.style.height = '72px';
+        ring.style.width = '96px';
+        ring.style.height = '96px';
         ring.style.backgroundColor = 'rgba(146, 51, 234, 0.24)';
         ring.style.borderColor = 'rgba(192, 132, 252, 0.8)';
         labelText.textContent = 'VIEW ↗';
