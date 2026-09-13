@@ -707,6 +707,47 @@
         "description": "Combines time limits, target accuracy, and penalty mechanics to support attention and reaction-based evaluation."
       }
     ]
+  },
+  {
+    "slug": "bahara-app",
+    "title": "Bahara App",
+    "category": "Accessibility & Education",
+    "categories": ["UI/UX", "SOFTWARE", "MOBILE"],
+    "year": 2026,
+    "featured": false,
+    "description": "An accessible Arabic learning application prototype designed for visually impaired users, featuring vocabulary learning, Hijaiyah letter pronunciation, and voice-oriented interaction.",
+    "role": "System Architect, Business Requirements & QA",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": ["Figma", ""],
+    "links": {
+      "github": "https://github.com/zoerlyx/bahara-app",
+      "demo": ""
+    },
+    "overview": "Bahara App is a learning application prototype focused on Arabic language education for visually impaired users. The concept includes Arabic vocabulary learning and Hijaiyah letter pronunciation while prioritizing accessibility and voice-oriented interaction throughout the learning experience.",
+    "context": "Many language learning applications depend heavily on visual interfaces, which can create barriers for visually impaired users. Bahara was conceived as an accessibility-focused learning platform that places greater emphasis on voice interaction and accessible learning flows for Arabic language education.",
+    "problem": "Visually impaired learners can face difficulties when using conventional language learning applications that rely on visual navigation and content presentation. The challenge was to define a learning system that could support Arabic vocabulary and Hijaiyah pronunciation while prioritizing accessibility from the system and user-experience level.",
+    "process": "The project involved defining business requirements, translating learning and accessibility needs into system requirements, designing the system architecture and database structure, and ensuring that the proposed application flow aligned with the intended learning objectives. Quality assurance activities were also carried out to review requirements, system behavior, and overall implementation readiness.",
+    "result": "The result is an accessibility-focused Arabic learning application prototype with a defined system architecture, database design, business requirements, and quality assurance process. The prototype establishes a foundation for developing a more complete learning platform for visually impaired users.",
+    "metrics": [
+      {
+        "label": "Arabic Learning",
+        "value": "Core Purpose",
+        "description": "Focuses on Arabic vocabulary and Hijaiyah letter pronunciation."
+      },
+      {
+        "label": "Accessibility",
+        "value": "Primary Design Focus",
+        "description": "Designed with visually impaired users as the primary target audience."
+      },
+      {
+        "label": "System Architecture",
+        "value": "Core Contribution",
+        "description": "Covered system architecture, database design, business requirements, and quality assurance."
+      }
+    ]
   }
-
 ]
+
