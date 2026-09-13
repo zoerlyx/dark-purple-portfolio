@@ -25,7 +25,7 @@ export const ProjectFilter: React.FC<ProjectFilterProps> = ({
             key={cat}
             onClick={() => onSelectCategory(cat)}
             data-cursor="link"
-            className={`font-mono text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-sm transition-all duration-200 cursor-pointer border ${
+            className={`font-mono text-xs uppercase tracking-wider px-3.5 py-1.5 mb-6 rounded-sm transition-all duration-200 cursor-pointer border ${
               isActive
                 ? 'bg-white text-black border-white font-bold shadow-[0_0_15px_rgba(255,255,255,0.15)]'
                 : 'bg-neutral-900/60 text-neutral-400 border-neutral-800 hover:text-white hover:border-neutral-700'
