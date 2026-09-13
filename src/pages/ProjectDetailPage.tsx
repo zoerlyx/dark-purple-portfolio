@@ -35,7 +35,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                   <span>01 // OVERVIEW</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
-                  SYSTEM ARCHITECTURE &amp; SCOPE
+                  SYSTEM &amp; PROJECT SCOPE
                 </h2>
                 <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.overview}
@@ -50,7 +50,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                   <span>02 // CONTEXT</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
-                  OPERATIONAL BACKGROUND
+                  PROJECT BACKGROUND
                 </h2>
                 <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify pt-9">
                   {project.context}
@@ -69,10 +69,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
               <Reveal>
                 <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                  <span>03 // THE PROBLEM</span>
+                  <span>03 // CHALLENGES</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
-                  CORE BOTTLENECKS
+                  KEY PROBLEMS &amp; CHALLENGES
                 </h2>
                 <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.problem}
@@ -84,10 +84,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
               <Reveal delay={120}>
                 <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                  <span>04 // PROCESS &amp; EXECUTION</span>
+                  <span>04 // APPROACH</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
-                  ENGINEERING INTERVENTIONS
+                  IMPLEMENTATION &amp; EXCECUTION
                 </h2>
                 <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.process}
@@ -104,10 +104,10 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
           <Reveal>
             <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-              <span>05 // STACK</span>
+              <span>05 // TECHNOLOGY</span>
             </div>
             <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight mb-8">
-              TECHNOLOGY INVENTORY
+              TECH STACK
             </h2>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 font-mono ">
