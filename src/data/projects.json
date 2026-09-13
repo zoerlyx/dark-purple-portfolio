@@ -511,6 +511,63 @@
         "description": "Processing results display file size, compression ratio, and processing time."
       }
     ]
+  },
+  {
+    "slug": "trackee",
+    "title": "Trackee",
+    "category": "Full-stack Application",
+    "categories": [
+      "SOFTWARE"
+    ],
+    "year": 2026,
+    "featured": false,
+    "description": "A personal finance management web application that helps users track income, expenses, budgets, and financial activity through a structured and intuitive dashboard.",
+    "role": "Full-stack Engineer",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "shadcn/ui",
+      "Lucide React",
+      "Vercel"
+    ],
+    "links": {
+      "github": "https://github.com/zoerlyx/trackee",
+      "demo": "https://trackee-app.vercel.app/"
+    },
+    "overview": "Trackee is a web application designed to help users manage their personal finances in a more structured way. It provides income and expense tracking, transaction category management, budget monitoring, and financial analytics through a centralized dashboard with interactive visualizations.",
+    "context": "Personal finance management requires more than simply recording transactions. Users also need a simple way to understand income, expenses, spending patterns, and balance changes over time. Trackee was developed as a centralized digital workspace that combines transaction tracking with financial visualization, allowing users to understand their financial condition without manually processing their data.",
+    "problem": "Manual financial tracking can make it difficult to gain a clear overview of overall financial conditions. A simple transaction list also provides limited insight into balance trends, expense composition, or the relationship between income and spending. The challenge was to create a system that remains simple for everyday transaction tracking while turning the collected data into meaningful and easy-to-understand financial information.",
+    "process": "Development began by defining the core data structure and user flows for authentication, income and expense tracking, transaction categories, budgets, and dashboard analytics. The frontend was built using Next.js, React, TypeScript, and Tailwind CSS, with shadcn/ui components supporting the interface. Supabase was used as the backend for authentication and application data management. The dashboard was then enhanced with visualizations for balance trends, expense breakdowns, and income-versus-expense comparisons, providing clearer context around the recorded transactions. The application was designed responsively for different screen sizes and deployed through Vercel.",
+    "result": "The result is a personal finance management application that combines transaction tracking and financial analytics within a single interface. Users can manage income, expenses, categories, and budgets while monitoring their financial condition through dashboard summaries, balance trends, expense breakdowns, and income-versus-expense comparisons. The responsive interface also allows the application to remain practical across both desktop and mobile devices.",
+    "metrics": [
+      {
+        "label": "Core Modules",
+        "value": "6",
+        "description": "Authentication, dashboard, income tracking, expense tracking, category management, and financial analytics."
+      },
+      {
+        "label": "Financial Views",
+        "value": "3+",
+        "description": "Balance trends, expense breakdown, and income-versus-expense comparison."
+      },
+      {
+        "label": "Platform",
+        "value": "Web",
+        "description": "A responsive web application designed for different screen sizes."
+      },
+      {
+        "label": "Backend",
+        "value": "Supabase",
+        "description": "Used for authentication and application data management."
+      }
+    ]
   }
 
 ]
