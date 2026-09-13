@@ -6,7 +6,7 @@
     "categories": ["BI", "DATA"],
     "year": 2026,
     "featured": true,
-    "description": "Enterprise data quality assurance, real-time revenue ingestion, and multi-branch performance analytics for nationwide retail operations.",
+    "description": "A Business Intelligence platform designed to monitor retail sales performance while identifying and tracing data quality issues through a structured data pipeline.",
     "role": "BI Developer & Data Pipeline Engineer",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
@@ -19,15 +19,42 @@
       "github": "https://github.com/zoerlyx/nusantara-retail-bi-dashboard",
       "demo": ""
     },
-    "overview": "Nusantara Retail is an enterprise-scale business intelligence and monitoring platform designed to consolidate telemetry across 140+ regional outlets into unified executive reports and automated alerting systems.",
-    "context": "Traditional manual reconciliation caused 72-hour reporting delays between inventory warehouses and regional finance directors, leading to stock discrepancies and missed inventory replenishment cycles.",
-    "problem": "Disconnected operational relational databases lacked standard indexing, data validation rules, and schema normalization, leading to intermittent discrepancy spikes in sales reconciliation.",
-    "process": "Constructed an automated daily ETL pipeline using Python and Docker workers, feeding a normalized PostgreSQL data warehouse with automated schema validation and strict DAX dimensional modeling in Power BI.",
-    "result": "Reduced transaction reconciliation time from 72 hours to 4 minutes with sub-second dashboard query responsiveness across 12 million record sets.",
+    "overview": "Nusantara Retail is an enterprise-scale business intelligence and monitoring platform designed to consolidate telemetry across 140+ regional outlets into unified executive reports and automated alerting systems.","overview": "Nusantara Retail is a Business Intelligence project built to transform retail transaction data into actionable business insights while maintaining visibility into the quality of the underlying data. The project goes beyond dashboard development by establishing a structured data flow across raw data, staging, warehouse, and quality layers, creating a clear foundation for both business monitoring and data quality assessment.",
+    "context": "In a retail environment with a large volume of transactions, business dashboards are only as reliable as the data behind them. This project therefore focuses on two connected areas: monitoring business performance through Power BI and assessing the quality of the data used for analysis. The dataset represents a one-year retail operation with 100,000 sales transactions, 15,000 customers, 500 products, 30 stores, and 8 regions.",
+    "problem": "Operational datasets can contain issues such as duplicate transaction IDs, inconsistent relationships between entities, and mismatches between transaction records and store or regional information. If these issues flow directly into analytical models, they can distort aggregations, metrics, and business insights. The challenge was to create a system that could detect, measure, and trace these issues while preserving the original source data for further investigation.",
+    "process": "The project began by generating the retail dataset with Python as the source of truth. After the baseline dataset was created, controlled data quality issues were intentionally injected to simulate conditions that may occur in real operational data, including duplicate transaction IDs and inconsistencies between transaction, store, and regional data. The resulting dataset was then processed through several PostgreSQL layers: raw, staging, warehouse, and quality. SQL was used for transformation while maintaining a clear separation between source and processed data. The quality layer applied Data Quality rules to detect, measure, and record issues at both the assessment-result and affected-record levels. The warehouse data and quality assessment results were then connected to Power BI to build structured business monitoring and data quality dashboards.",
+    "result": "The final result is a BI dashboard that provides more than a view of sales performance. It also gives visibility into the quality of the data behind those metrics, allowing users to monitor business indicators, identify data quality problems, examine issue patterns, and trace individual affected records. This approach creates a more transparent monitoring process and helps distinguish actual business conditions from problems originating in the underlying data.",
     "metrics": [
-      { "label": "Reconciliation Latency", "value": "4 mins" },
-      { "label": "Record Volume", "value": "12M+" },
-      { "label": "Branch Sync Rate", "value": "99.8%" }
+      {
+        "label": "Sales Transactions",
+        "value": "100K",
+        "description": "Sales transactions processed in the data warehouse."
+      },
+      {
+        "label": "Customers",
+        "value": "15K",
+        "description": "Customer records included in the analysis."
+      },
+      {
+        "label": "Products",
+        "value": "500",
+        "description": "Products represented in the retail dataset."
+      },
+      {
+        "label": "Stores",
+        "value": "30",
+        "description": "Stores distributed across 8 regions."
+      },
+      {
+        "label": "DQ Results",
+        "value": "5,640",
+        "description": "Recorded data quality assessment results."
+      },
+      {
+        "label": "DQ Issues",
+        "value": "9,738",
+        "description": "Individual data quality issues identified across affected records."
+      }
     ]
   },
   {
