@@ -450,5 +450,67 @@
         "description": "Processing results display file size, compression ratio, and processing time."
       }
     ]
+  },
+  {
+    "slug": "secure-multimedia-codec-studio",
+    "title": "Secure Multimedia Codec Studio",
+    "category": "Full-stack Application",
+    "categories": ["SOFTWARE"],
+    "year": 2026,
+    "featured": false,
+    "description": "A full-stack web application for exploring lossless and lossy multimedia compression, as well as steganography, through interactive image, audio, and video processing.",
+    "role": "Full-stack Engineer",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "Python",
+      "OpenCV",
+      "FFmpeg",
+      "Zlib"
+    ],
+    "links": {
+      "github": "https://github.com/zoerlyx/secure-codec-studio",
+      "demo": "https://secure-codec-studio.vercel.app/"
+    },
+    "overview": "Secure Multimedia Codec Studio is a full-stack web application developed to demonstrate and explore multimedia compression and steganography through an interactive interface. The application supports both lossless and lossy compression, decompression for losslessly compressed media, as well as hidden message embedding and extraction through steganography. Media processing covers images, audio, and video using algorithms and codecs suited to each media type.",
+    "context": "Understanding multimedia compression involves more than reducing file size. It also requires considering the trade-offs between data preservation, quality, and storage efficiency. Steganography adds another dimension by embedding hidden information within digital media. This project was developed as an interactive environment where users can directly experiment with these techniques and observe the characteristics and trade-offs of each approach.",
+    "problem": "Lossless compression, lossy compression, and steganography are often studied separately, making it difficult to understand their practical differences and trade-offs through direct experimentation. Multimedia processing also requires different approaches depending on the type of media being handled. The challenge was to build a single application that could accept multimedia files, process them using appropriate methods, present the results interactively, and provide useful metrics such as file size, compression ratio, and output quality.",
+    "process": "Development began with an SPA-style interface using Next.js, React, TypeScript, and Tailwind CSS, featuring an upload dropzone, processing mode selection, result cards, and media preview. The backend was developed with FastAPI using a layered structure separating routing, validation, services, and algorithms. Zlib was used for lossless compression so that original data could be fully restored, while lossy compression used quality-based processing to reduce file size. Steganography was implemented using the Least Significant Bit (LSB) method for embedding and extracting hidden messages. Audio and video processing used FFmpeg with appropriate codecs, while OpenCV was used for image processing. Processing results were then returned to the frontend together with metadata such as original file size, processed size, compression ratio, and processing time.",
+    "result": "The result is an interactive web application that allows users to experiment with multiple multimedia processing techniques within a single workflow. Users can compare lossless and lossy compression results, restore media through lossless decompression, and embed or extract hidden messages through steganography. The application also provides media previews and processing metrics, making it possible to observe the differences between data preservation, file size reduction, and quality changes directly.",
+    "metrics": [
+      {
+        "label": "Processing Modes",
+        "value": "5",
+        "description": "Lossless Compress, Decompress, Lossy Compress, Steganography, and Extract."
+      },
+      {
+        "label": "Media Types",
+        "value": "3",
+        "description": "Supports image, audio, and video processing."
+      },
+      {
+        "label": "Compression Types",
+        "value": "2",
+        "description": "Includes both lossless and lossy compression."
+      },
+      {
+        "label": "Steganography",
+        "value": "LSB",
+        "description": "Least Significant Bit is used to embed and extract hidden messages."
+      },
+      {
+        "label": "Analytics",
+        "value": "Real-time",
+        "description": "Processing results display file size, compression ratio, and processing time."
+      }
+    ]
   }
+
 ]
