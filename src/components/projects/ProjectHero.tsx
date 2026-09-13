@@ -49,7 +49,7 @@ export const ProjectHero: React.FC<ProjectHeroProps> = ({ project, onBack }) => 
 
         {/* Action Links */}
         <div className="flex flex-wrap items-center gap-4 mb-16">
-          {project.links.demo && (
+          {project.links?.demo && (
             <a
               href={project.links.demo}
               target="_blank"

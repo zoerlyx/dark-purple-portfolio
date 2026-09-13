@@ -7,17 +7,17 @@
     "year": 2026,
     "featured": true,
     "description": "Enterprise data quality assurance, real-time revenue ingestion, and multi-branch performance analytics for nationwide retail operations.",
-    "role": "BI Developer & Data Architect",
+    "role": "BI Developer & Data Pipeline Engineer",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["Power BI", "PostgreSQL", "Python", "Docker", "DAX", "FastAPI"],
+    "technologies": ["Power BI", "PostgreSQL", "Python", "Docker", "DAX", "EXCEL"],
     "links": {
-      "github": "https://github.com/example/nusantara-retail-bi",
-      "demo": "https://demo.nusantara-retail.internal"
+      "github": "https://github.com/zoerlyx/nusantara-retail-bi-dashboard",
+      "demo": ""
     },
     "overview": "Nusantara Retail is an enterprise-scale business intelligence and monitoring platform designed to consolidate telemetry across 140+ regional outlets into unified executive reports and automated alerting systems.",
     "context": "Traditional manual reconciliation caused 72-hour reporting delays between inventory warehouses and regional finance directors, leading to stock discrepancies and missed inventory replenishment cycles.",
