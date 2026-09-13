@@ -637,8 +637,8 @@
       "Windows"
     ],
     "links": {
-      "github": "",
-      "demo": ""
+      "github": "https://github.com/zoerlyx/unity-games/tree/main/vocaplay",
+      "demo": "https://github.com/zoerlyx/unity-games/releases/tag/v1.0"
     },
     "overview": "VocaPlay is a voice-based educational game that combines visual vocabulary prompts, live camera interaction, and speech recognition within a retro pixel environment. Players must identify the target vocabulary associated with each image and pronounce it correctly in their selected language to progress through the game.",
     "context": "Language learning and pronunciation practice can benefit from interactive activities that connect visual information, spoken language, and immediate feedback. VocaPlay was developed within an educational psychology study to explore how an interactive game environment using voice and live camera interaction could support language acquisition, speech-related activities, and auditory memory retention.",
@@ -682,8 +682,8 @@
       "FPS"
     ],
     "links": {
-      "github": "",
-      "demo": ""
+      "github": "https://github.com/zoerlyx/unity-games/tree/main/pumpkin-halloween",
+      "demo": "https://github.com/zoerlyx/unity-games/releases/tag/v1.0"
     },
     "overview": "Shoot the Pumpkin is a first-person shooting game designed around fast target recognition and precision-based gameplay. Players move through a 360-degree environment and must identify and shoot randomly spawning pumpkins before the time limit expires while avoiding non-target objects such as black rabbits and bats.",
     "context": "Reaction-based gameplay can be used as an interactive environment for observing attention, response speed, and target recognition. The game was developed as a client project for psychological research, with gameplay mechanics designed around visual attention and cognitive focus.",
