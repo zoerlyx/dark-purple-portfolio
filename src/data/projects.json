@@ -568,6 +568,54 @@
         "description": "Used for authentication and application data management."
       }
     ]
+  },
+  {
+    "slug": "cssmora-website",
+    "title": "CSSMoRA Website",
+    "category": "Website Development",
+    "categories": ["SOFTWARE"],
+    "year": 2026,
+    "featured": false,
+    "description": "An organizational website developed to provide a centralized digital information hub, strengthen CSSMoRA's online presence, and make organizational information more accessible to members and visitors.",
+    "role": "Website Developer & Administrator",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "WordPress",
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "links": {
+      "github": "",
+      "demo": "https://cssmorauinsgdbdg.com/"
+    },
+    "overview": "CSSMoRA Website is an organizational website that serves as a digital information hub and online representation of CSSMoRA. The website is structured to present organizational information, activities, and other relevant content for members and visitors through a centralized web platform.",
+    "context": "For an organization, a website provides an important channel for communicating its identity, activities, information, and public presence. When information is distributed across different media, members and visitors may have difficulty finding relevant content. The website was therefore developed to provide a more centralized and structured source of organizational information.",
+    "problem": "Dispersed organizational information can make it difficult for members and visitors to find relevant content. At the same time, an organizational website needs a clear structure so that its content can be maintained and updated as activities and communication needs evolve. The challenge was to build and maintain a website that could present information in an organized way while remaining accessible and practical to use.",
+    "process": "Development began by defining the website structure and organizational content requirements, followed by implementing the required interface and information components. After the initial development, website administration and maintenance were carried out to keep the content relevant and updated according to organizational needs. The role also involved managing the website as part of the organization's broader digital administration activities.",
+    "result": "The result is an organizational website that provides a more structured digital information hub and online presence for CSSMoRA. It serves as a centralized platform for presenting organizational information, activities, and communication content while providing a more accessible experience for members and visitors.",
+    "metrics": [
+      {
+        "label": "Organizational Website",
+        "value": "Project Scope",
+        "description": "Developed as a centralized information hub and digital representation of the organization."
+      },
+      {
+        "label": "Developer + Administrator",
+        "value": "Role",
+        "description": "Covers website development together with administration and content maintenance."
+      },
+      {
+        "label": "Information Hub",
+        "value": "Primary Function",
+        "description": "Serves as a central platform for organizational information and activities."
+      }
+    ]
   }
 
 ]
