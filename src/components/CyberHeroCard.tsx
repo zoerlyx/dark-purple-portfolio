@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CyberHeroCard({
   roles = ['PORTFOLIO'],
-  locationId = 'ID-2026',
+  locationId = 'BDG-2026',
   statusText = 'ONLINE',
 }) {
   return (
@@ -59,7 +59,7 @@ export default function CyberHeroCard({
               {statusText}
             </span>
             <span className="text-neutral-700">//</span>
-            <span>LOC // {locationId}</span>
+            <span>IDN // {locationId}</span>
           </div>
 
           {/* Inner Content Wrapper */}
