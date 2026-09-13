@@ -616,6 +616,52 @@
         "description": "Serves as a central platform for organizational information and activities."
       }
     ]
+  },
+  {
+    "slug": "vocaplay",
+    "title": "VocaPlay",
+    "category": "Game Development",
+    "categories": ["SOFTWARE", "CLIENT"],
+    "year": 2025,
+    "featured": false,
+    "description": "A voice-based educational game developed in Unity where players interact with visual vocabulary prompts, use live camera and voice input, and pronounce target words in their selected language to progress through a retro pixel environment.",
+    "role": "Game Developer",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "technologies": [
+      "Unity",
+      "C#",
+      "Voice Recognition",
+      "Windows"
+    ],
+    "links": {
+      "github": "",
+      "demo": ""
+    },
+    "overview": "VocaPlay is a voice-based educational game that combines visual vocabulary prompts, live camera interaction, and speech recognition within a retro pixel environment. Players must identify the target vocabulary associated with each image and pronounce it correctly in their selected language to progress through the game.",
+    "context": "Language learning and pronunciation practice can benefit from interactive activities that connect visual information, spoken language, and immediate feedback. VocaPlay was developed within an educational psychology study to explore how an interactive game environment using voice and live camera interaction could support language acquisition, speech-related activities, and auditory memory retention.",
+    "problem": "Traditional vocabulary exercises can provide limited opportunities for interactive pronunciation practice and immediate feedback. The challenge was to create a game-based environment that combines visual vocabulary prompts, live camera interaction, spoken responses, and instant audio-visual feedback while supporting multiple languages.",
+    "process": "Development focused on creating the retro pixel game environment, implementing vocabulary-based progression mechanics, and integrating real-time voice recognition for pronunciation input. A live camera feed was incorporated alongside audio-visual response indicators to provide immediate feedback for correct and incorrect answers. Multilingual support was implemented for Arabic, English, Sundanese, and Javanese.",
+    "result": "The result is an interactive educational game that combines visual vocabulary recognition, live camera interaction, voice recognition, and immediate feedback within a gamified environment. VocaPlay provides a platform for exploring language acquisition, pronunciation practice, and auditory memory through interactive gameplay.",
+    "metrics": [
+      {
+        "label": "4 Languages",
+        "value": "Multilingual Support",
+        "description": "Supports Arabic, English, Sundanese, and Javanese vocabulary interaction."
+      },
+      {
+        "label": "Live Camera",
+        "value": "Visual Interaction",
+        "description": "Integrates a live camera feed as part of the interactive gameplay experience."
+      },
+      {
+        "label": "Voice Recognition",
+        "value": "Core Interaction",
+        "description": "Uses spoken player responses for vocabulary challenges and pronunciation evaluation."
+      }
+    ]
   }
 
 ]
