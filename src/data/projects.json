@@ -286,7 +286,7 @@
     "slug": "road-sentry",
     "title": "Road-Sentry",
     "category": "AI-Powered Software",
-    "categories": ["SOFTWARE", "AI"],
+    "categories": ["SOFTWARE", "AI", "MOBILE"],
     "year": 2026,
     "featured": true,
     "description": "An AI-powered web platform for reporting and monitoring road damage, combining automated image detection, geographic mapping, priority assessment, and report tracking.",
@@ -338,39 +338,64 @@
     ]
   },
   {
-    "slug": "aurora-health",
-    "title": "Aurora Health",
-    "category": "Mobile Health Tracker",
-    "categories": ["MOBILE", "UI/UX"],
-    "year": 2024,
+    "slug": "qcare",
+    "title": "QCare",
+    "category": "Mobile Application",
+    "categories": ["MOBILE"],
+    "year": 2025,
     "featured": false,
-    "description": "Chronobiology and circadian rhythm sleep optimizer based on ambient light exposure and resting heart rate data.",
-    "role": "UI/UX & Mobile Architect",
+    "description": "An Android application for digitally managing clinic registration and queuing, allowing patients to request queue numbers remotely while helping clinic staff manage the service process more efficiently.",
+    "role": "UI/UX Designer & Frontend Developer",
     "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop",
     "gallery": [
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop"
     ],
-    "technologies": ["React Native", "TypeScript", "Tailwind", "HealthKit", "Figma"],
-    "links": {
-      "github": "https://github.com/example/aurora-health",
-      "demo": ""
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "XML",
+      "SQLite",
+      "MVVM",
+      "Android"
+    ],
+      "links": {
+      "github": "https://github.com/zoerlyx/q-care",
+      "demo": "https://play.google.com/store/apps/details?id=com.qcare.app"
     },
-    "overview": "Aurora Health bridges wearable biometric streams with chronotype science, delivering unobtrusive nudges for sunlight intake, caffeine cut-off times, and wind-down periods.",
-    "context": "Standard sleep trackers tell users they slept poorly in hindsight without providing actionable preventative daytime behaviors.",
-    "problem": "Biometric data visualizations are frequently sterile, intimidating, and lack empathy.",
-    "process": "Conducted 24 user interviews and iterated 5 design prototypes in Figma before building a custom fluid gesture interface in React Native.",
-    "result": "87% of pilot participants reported improved subjective morning alertness within 14 days.",
+    "overview": "QCare is an Android application designed to digitize the clinic registration and queue management process. Patients can create an account, select an available doctor, request a queue number, receive their number after approval, and monitor their queue status through the application. On the staff side, QCare provides tools to manage doctor information, review queue requests, approve or decline patients, and monitor their arrival status.",
+    "context": "Traditional clinic registration and queue processes may require patients to arrive in person simply to register and obtain a queue number. This can increase waiting time for patients and create additional administrative work for clinic staff. QCare was designed to move these processes into a digital workflow, allowing patients and staff to interact through a more structured and convenient system.",
+    "problem": "Patients need a more convenient way to register and request a queue number without having to visit the clinic beforehand. At the same time, clinic staff need a structured mechanism to manage doctor availability, review queue requests, organize the queue, and monitor patient arrivals. The challenge was to design an intuitive mobile experience that could support both sides while keeping their workflows clearly separated.",
+    "process": "The development process began by mapping the primary user journeys for patients and clinic staff, followed by designing the interface and interaction flow around their respective needs. Patient features cover account authentication, doctor selection, queue requests, queue number assignment, status monitoring, and arrival confirmation. Staff features include doctor management, availability updates, queue request review, approval or rejection, queue management, and patient arrival tracking. The mobile interface was implemented using Kotlin with Jetpack Compose and XML, while the application structure followed the MVVM architecture to maintain a clear separation between the UI, presentation logic, and data layer. SQLite was used for local data storage.",
+    "result": "The result is an Android application that brings registration, queue requests, approval, and patient arrival tracking into a single digital workflow. Patients can request a queue without visiting the clinic solely for registration, while clinic staff gain a more organized way to manage doctors, queue requests, and patient attendance. The interface and interaction flow were designed to keep both user roles clear and easy to navigate.",
     "metrics": [
-      { "label": "Pilot Size", "value": "250 users" },
-      { "label": "Adherence", "value": "91%" }
+      {
+        "label": "Platform",
+        "value": "Android",
+        "description": "Mobile application developed for Android devices."
+      },
+      {
+        "label": "User Roles",
+        "value": "2",
+        "description": "Supports dedicated workflows for patients and clinic staff."
+      },
+      {
+        "label": "Architecture",
+        "value": "MVVM",
+        "description": "Used to maintain clear separation of responsibilities within the application."
+      },
+      {
+        "label": "Queue Workflow",
+        "value": "End-to-End",
+        "description": "Covers queue requests, approval, number assignment, status tracking, and arrival confirmation."
+      }
     ]
   },
   {
-    "slug": "latent-space",
-    "title": "Latent Space Explorer",
-    "category": "Generative Art & Audio",
-    "categories": ["CLIENT", "AI"],
-    "year": 2023,
+    "slug": "secure-multimedia-codec-studio",
+    "title": "Secure Multimedia Codec Studio",
+    "category": "Full-stack Application",
+    "categories": ["SOFTWARE"],
+    "year": 2026,
     "featured": false,
     "description": "High-dimensional vector embedding visualizer mapping generative audio spectrograms into 3D geometric manifold clusters.",
     "role": "Creative Technologist",
@@ -380,7 +405,7 @@
     ],
     "technologies": ["WebGL", "Three.js", "Python", "UMAP", "Web Audio API"],
     "links": {
-      "github": "https://github.com/example/latent-space-explorer",
+      "github": "https://github.com/zoerlyx/secure-codec-studio",
       "demo": "https://latent-space.example.org"
     },
     "overview": "An interactive mathematical exhibition examining how neural audio models organize timbre, harmonic overtones, and rhythmic cadence in 512-dimensional vector space.",
