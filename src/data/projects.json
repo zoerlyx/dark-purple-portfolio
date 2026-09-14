@@ -680,7 +680,7 @@
       "/gallery-13-b.jpg",
       "/gallery-13-c.jpg"
     ],
-    "technologies": ["Figma", ""],
+    "technologies": ["Figma"],
     "links": {
       "github": "https://github.com/zoerlyx/bahara-app",
       "demo": ""
@@ -717,9 +717,11 @@
     "featured": false,
     "description": "A student service marketplace designed to connect university students with on-demand campus assistance, including food delivery, item pickup, and everyday errands.",
     "role": "Project Manager",
-    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-14-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-14-a.jpg",
+      "/gallery-14-b.jpg",
+      "/gallery-14-c.jpg"
     ],
     "technologies": [
       "Node.js",
