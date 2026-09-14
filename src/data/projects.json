@@ -579,9 +579,11 @@
     "featured": false,
     "description": "A voice-based educational game developed in Unity where players interact with visual vocabulary prompts, use live camera and voice input, and pronounce target words in their selected language to progress through a retro pixel environment.",
     "role": "Game Developer",
-    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-11-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-11-a.jpg",
+      "/gallery-11-b.jpg",
+      "/gallery-11-c.jpg"
     ],
     "technologies": [
       "Unity",
