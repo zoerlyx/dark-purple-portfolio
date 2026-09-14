@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -34,16 +35,18 @@
   }
 }
 
+/* Penambahan fallback font geometris tebal agar mirip Syne jika koneksi lambat */
 .font-display {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Syne', 'Trebuchet MS', 'Arial Black', Impact, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
 }
 
 .font-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 }
 
 .font-mono {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 /* Editorial typography clamps */

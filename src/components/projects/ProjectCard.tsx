@@ -56,12 +56,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
 
             {/* Title */}
-            <h3 className="font-display font-extrabold uppercase text-3xl sm:text-4xl md:text-4xl text-white tracking-tight leading-tight group-hover:text-purple-400 transition-colors duration-300 flex items-start justify-between gap-4">
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
-                {project.title}
-              </span>
-              <ArrowUpRight className="w-8 h-* text-neutral-400 group-hover:text-purple-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 flex-shrink-0" />
-            </h3>
+            <h3 className="font-display font-extrabold uppercase text-[1.65rem] sm:text-3xl md:text-4xl text-white tracking-tight leading-tight group-hover:text-purple-400 transition-colors duration-300 flex items-start justify-between gap-3 min-w-0 w-full">
+  <span className="transition-transform duration-300 group-hover:translate-x-1 break-words min-w-0">
+    {project.title}
+  </span>
+  <ArrowUpRight className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-400 group-hover:text-purple-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 flex-shrink-0 mt-0.5" />
+</h3>
 
             {/* Role & Description */}
             <div className="mt-4 font-mono text-[14px] text-neutral-400 uppercase tracking-widest">
