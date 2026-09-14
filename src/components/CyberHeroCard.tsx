@@ -54,12 +54,12 @@ export default function CyberHeroCard({
 
           {/* Header Status */}
           <div className="absolute top-3 right-5 flex items-center gap-3 pointer-events-none select-none font-mono text-[9px] tracking-widest text-neutral-500 z-10">
-            <span className="flex items-center gap-1.5 text-cyan-400/80">
+            <span className="flex items-center gap-1.5 text-cyan-400/80 text-[8px] sm:text-xs">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />
               {statusText}
             </span>
-            <span className="text-neutral-700">//</span>
-            <span>IDN // {locationId}</span>
+            <span className="hidden sm:inline text-neutral-700">//</span>
+            <span className="hidden sm:inline">IDN // {locationId}</span>
           </div>
 
           {/* Inner Content Wrapper */}
@@ -79,14 +79,14 @@ export default function CyberHeroCard({
                   }`}
                 >
                   {/* Base Text Layer */}
-                  <h1 className="font-display font-black tracking-wider uppercase leading-none whitespace-nowrap text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white/80">
+                  <h1 className="font-display font-black tracking-wider uppercase leading-none whitespace-nowrap text-2xl sm:text-5xl md:text-5xl lg:text-7xl text-white/80">
                     {role}
                   </h1>
 
                   {/* Cyberpunk RGB Sliced Overlay Layer */}
                   <h1
                     aria-hidden="true"
-                    className={`absolute inset-0 font-display font-black tracking-wider uppercase leading-none animate-static-pixel pointer-events-none whitespace-nowrap text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-cyan-400 select-none ${
+                    className={`absolute inset-0 font-display font-black tracking-wider uppercase leading-none animate-static-pixel pointer-events-none whitespace-nowrap text-2xl sm:text-5xl md:text-6xl lg:text-7xl text-cyan-400 select-none ${
                       idx === 1 ? '[animation-delay:0.25s]' : idx === 2 ? '[animation-delay:0.5s]' : ''
                     }`}
                     style={{
@@ -109,7 +109,7 @@ export default function CyberHeroCard({
                 <span className="animate-typewriter-text text-white font-mono font-medium opacity-100 drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
                   fardho z. // id-2026
                 </span>
-                <span className="animate-cursor-cmd text-white font-bold ml-1 opacity-100 drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
+                <span className="animate-cursor-cmd text-xs sm:text-base text-white font-bold ml-1 opacity-100 drop-shadow-[0_0_6px_rgba(255,255,255,0.9)]">
                   |
                 </span>
               </div>
