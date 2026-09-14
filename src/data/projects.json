@@ -351,9 +351,11 @@
     "featured": false,
     "description": "An Android application for digitally managing clinic registration and queuing, allowing patients to request queue numbers remotely while helping clinic staff manage the service process more efficiently.",
     "role": "UI/UX Designer & Frontend Developer",
-    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-7-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-7-a.jpg",
+      "/gallery-7-b.jpg",
+      "/gallery-7-c.jpg"
     ],
     "technologies": [
       "Kotlin",
