@@ -52,7 +52,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
                   PROJECT BACKGROUND
                 </h2>
-                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify pt-9">
+                <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify ">
                   {project.context}
                 </p>
               </Reveal>
@@ -72,7 +72,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                   <span>03 // CHALLENGES</span>
                 </div>
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-white uppercase tracking-tight mb-6">
-                  KEY PROBLEMS &amp; CHALLENGES
+                  KEY PROBLEMS &amp; <br/> CHALLENGES
                 </h2>
                 <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-mono text-justify">
                   {project.problem}
@@ -146,7 +146,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-neutral-800">
                 {project.metrics.map((m, idx) => (
                   <div key={idx} className="p-6 rounded-sm bg-neutral-950 border border-neutral-800">
-                    <div className="font-display font-black text-3xl md:text-4xl text-purple-400 mb-2">
+                    <div className="font-display font-black text-3xl md:text-3xl text-purple-400 mb-2">
                       {m.value}
                     </div>
                     <div className="font-mono text-xs uppercase tracking-wider text-neutral-400">

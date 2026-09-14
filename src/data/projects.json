@@ -8,18 +8,18 @@
     "featured": true,
     "description": "A Business Intelligence platform designed to monitor retail sales performance while identifying and tracing data quality issues through a structured data pipeline.",
     "role": "BI Developer & Data Pipeline Engineer",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-1-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-1-a.jpg",
+      "/gallery-1-b.jpg",
+      "/gallery-1-c.jpg"
     ],
     "technologies": ["Power BI", "PostgreSQL", "Python", "Docker", "DAX", "EXCEL"],
     "links": {
       "github": "https://github.com/zoerlyx/nusantara-retail-bi-dashboard",
       "demo": ""
     },
-    "overview": "Nusantara Retail is an enterprise-scale business intelligence and monitoring platform designed to consolidate telemetry across 140+ regional outlets into unified executive reports and automated alerting systems.","overview": "Nusantara Retail is a Business Intelligence project built to transform retail transaction data into actionable business insights while maintaining visibility into the quality of the underlying data. The project goes beyond dashboard development by establishing a structured data flow across raw data, staging, warehouse, and quality layers, creating a clear foundation for both business monitoring and data quality assessment.",
+    "overview": "Nusantara Retail is a Business Intelligence project built to transform retail transaction data into actionable business insights while maintaining visibility into the quality of the underlying data. The project goes beyond dashboard development by establishing a structured data flow across raw data, staging, warehouse, and quality layers, creating a clear foundation for both business monitoring and data quality assessment.",
     "context": "In a retail environment with a large volume of transactions, business dashboards are only as reliable as the data behind them. This project therefore focuses on two connected areas: monitoring business performance through Power BI and assessing the quality of the data used for analysis. The dataset represents a one-year retail operation with 100,000 sales transactions, 15,000 customers, 500 products, 30 stores, and 8 regions.",
     "problem": "Operational datasets can contain issues such as duplicate transaction IDs, inconsistent relationships between entities, and mismatches between transaction records and store or regional information. If these issues flow directly into analytical models, they can distort aggregations, metrics, and business insights. The challenge was to create a system that could detect, measure, and trace these issues while preserving the original source data for further investigation.",
     "process": "The project began by generating the retail dataset with Python as the source of truth. After the baseline dataset was created, controlled data quality issues were intentionally injected to simulate conditions that may occur in real operational data, including duplicate transaction IDs and inconsistencies between transaction, store, and regional data. The resulting dataset was then processed through several PostgreSQL layers: raw, staging, warehouse, and quality. SQL was used for transformation while maintaining a clear separation between source and processed data. The quality layer applied Data Quality rules to detect, measure, and record issues at both the assessment-result and affected-record levels. The warehouse data and quality assessment results were then connected to Power BI to build structured business monitoring and data quality dashboards.",
@@ -66,11 +66,11 @@
     "featured": true,
     "description": "An automated data collection system that extracts posts, comments, and time-related metadata from Facebook Groups, then processes the collected data into structured HTML, Excel, and CSV outputs.",
     "role": "Data Collection & Automation Engineer",
-    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-2-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-2-a.jpg",
+      "/gallery-2-b.jpg",
+      "/gallery-2-c.jpg"
     ],
     "technologies": [
       "Python",
