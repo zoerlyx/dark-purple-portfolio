@@ -529,9 +529,11 @@
     "featured": false,
     "description": "An organizational website developed to provide a centralized digital information hub, strengthen CSSMoRA's online presence, and make organizational information more accessible to members and visitors.",
     "role": "Website Developer & Administrator",
-    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-10-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-10-a.jpg",
+      "/gallery-10-b.jpg",
+      "/gallery-10-c.jpg"
     ],
     "technologies": [
       "WordPress",
