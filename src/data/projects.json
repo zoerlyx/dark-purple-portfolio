@@ -235,10 +235,11 @@
     "featured": true,
     "description": "An AI-powered productivity platform for developer teams that combines project management, collaboration, productivity analytics, and intelligent planning within a unified workspace.",
     "role": "Full-stack Developer & AI Integration",
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-4-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-4-a.jpg",
+      "/gallery-4-b.jpg",
+      "/gallery-4-c.jpg"
     ],
     "technologies": [
       "Next.js",
