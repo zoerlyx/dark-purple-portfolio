@@ -294,9 +294,11 @@
     "featured": true,
     "description": "An AI-powered web platform for reporting and monitoring road damage, combining automated image detection, geographic mapping, priority assessment, and report tracking.",
     "role": "Project Manager, Data Preparation & QA",
-    "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-5-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-5-a.jpg",
+      "/gallery-5-b.jpg",
+      "/gallery-5-c.jpg"
     ],
     "technologies": [
       "React",
