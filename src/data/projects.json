@@ -180,10 +180,11 @@
     "featured": true,
     "description": "Interactive data analytics dashboard for exploring, evaluating, and visualizing a road damage dataset through structured data analysis and statistical insights.",
     "role": "Data Analyst & Dashboard Developer",
-    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-3-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-3-a.jpg",
+      "/gallery-3-b.jpg",
+      "/gallery-3-c.jpg"
     ],
     "technologies": [
     "Python",
