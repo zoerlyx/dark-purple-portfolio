@@ -2,6 +2,19 @@ import React, { useEffect } from 'react';
 
 export const CustomCursor: React.FC = () => {
   useEffect(() => {
+
+    // -------------------------------------------------------------
+    // TAMBAHKAN BAGIAN INI DI BARIS PERTAMA
+    // -------------------------------------------------------------
+    const isTouchDevice = 
+      'ontouchstart' in window || 
+      navigator.maxTouchPoints > 0 || 
+      window.matchMedia('(pointer: coarse)').matches;
+
+    if (isTouchDevice) {
+      return; // Berhenti di sini, jangan buat elemen kursor di Android/HP
+    }
+    
     // 1. Injeksi Elemen Titik Pusat, Ring Outer, dan Canvas Riak Air ke DOM
     const dot = document.createElement('div');
     const ring = document.createElement('div');

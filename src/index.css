@@ -48,9 +48,10 @@
 
 /* Editorial typography clamps */
 .hero-editorial-title {
-  font-size: clamp(3.2rem, 9.5vw, 11rem);
-  line-height: 0.88;
+  font-size: clamp(2.25rem, 8vw, 11rem); /* Aman untuk layar HP sempit */
+  line-height: 0.9;
   letter-spacing: -0.04em;
+  word-break: break-word; /* Mencegah kata panjang melebihi layar */
 }
 
 .section-editorial-title {
@@ -123,7 +124,7 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-@media (pointer: fine) {
+@media (pointer: fine) and (hover: hover) {
   body, a, button {
     cursor: none !important;
   }

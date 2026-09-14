@@ -41,6 +41,15 @@ export default function App() {
       return;
     }
 
+    // -------------------------------------------------------------
+    // TAMBAHKAN BAGIAN INI: Matikan Lenis jika dibuka di HP/Touchscreen
+    // -------------------------------------------------------------
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+    if (isTouchDevice) {
+      return; // Gunakan scroll bawaan HP agar lancar
+    }
+    // -------------------------------------------------------------
+
     // Inisialisasi Lenis dengan opsi yang disempurnakan
     const lenis = new Lenis({
       duration: 1.2,
