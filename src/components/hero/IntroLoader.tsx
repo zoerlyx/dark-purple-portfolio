@@ -57,26 +57,29 @@ export const IntroLoader: React.FC<IntroLoaderProps> = ({ onComplete }) => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[10000] bg-[#050507] text-[#f5f5f7] flex items-center justify-center select-none overflow-hidden"
+      className="fixed inset-0 h-[100dvh] w-screen z-[10000] bg-[#050507] text-[#f5f5f7] flex items-center justify-center select-none overflow-hidden"
     >
       {/* Ambient Glow */}
       <div 
-        className="absolute w-72 h-72 rounded-full bg-purple-600/15 blur-[100px] pointer-events-none"
+        className="absolute w-56 h-56 sm:w-72 sm:h-72 rounded-full bg-purple-600/15 blur-[80px] sm:blur-[100px] pointer-events-none -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
         style={{ opacity: count / 100 }}
       />
 
       {/* Main Minimalist Container */}
-      <div ref={counterRef} className="relative z-10 flex flex-col items-center justify-center">
+      <div 
+        ref={counterRef} 
+        className="relative z-10 flex flex-col items-center justify-center w-full px-4 text-center"
+      >
         {/* Counter Number */}
-        <div className="flex items-baseline font-mono text-4xl md:text-5xl font-medium tracking-tight text-white mb-6">
+        <div className="flex items-baseline justify-center font-mono text-4xl sm:text-5xl font-medium tracking-tight text-white mb-6">
           <span>{String(count).padStart(2, '0')}</span>
-          <span className="text-purple-400 text-lg md:text-xl font-light ml-1">
+          <span className="text-purple-400 text-lg sm:text-xl font-light ml-1">
             %
           </span>
         </div>
 
         {/* Fixed Progress Bar Track & Fill */}
-        <div className="w-48 h-1 bg-white/10 rounded-full overflow-hidden relative">
+        <div className="w-40 sm:w-48 h-1 bg-white/10 rounded-full overflow-hidden relative mx-auto">
           <div
             className="h-full bg-gradient-to-r from-purple-500 via-indigo-400 to-white rounded-full transition-all duration-75 ease-linear"
             style={{ 
