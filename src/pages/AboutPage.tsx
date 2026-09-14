@@ -5,10 +5,10 @@ import { ArrowDown } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (
-    <div className="w-full pt-32 md:pt-40 pb-28 md:pb-12">
+    <div className="w-full pt-32 md:pt-40 pb-2 md:pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Page Header */}
-        <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-24 flex flex-col items-center justify-center text-center">
+        <div className="border-b border-neutral-800/80 pb-12 md:pb-12 mb-12 md:mb-24 flex flex-col items-center justify-center text-center">
           <Reveal>
             <div className="flex flex-col items-center">
               {/* Sub-header di tengah */}
@@ -47,7 +47,7 @@ export const AboutPage: React.FC = () => {
                 </div>
 
             <div className="lg:col-span-7 flex flex-col justify-between">
-                <div className="mt-12 pt-8 border-t border-neutral-800 grid grid-cols-2 sm:grid-cols-3 gap-64 font-mono text-xs uppercase tracking-wider text-neutral-400">
+                <div className="mt-12 pt-8 border-t border-neutral-800 hidden sm:grid grid-cols-2 sm:grid-cols-3 gap-64 font-mono text-xs uppercase tracking-wider text-neutral-400">
                   <div>
                     <span className="text-white block font-bold">EDUCATION</span>
                     <span className="text-[11px]">Information Technology</span>
@@ -67,7 +67,7 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.2 MY APPROACH (EDITORIAL TYPOGRAPHY PROCESS) */}
-        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+        <section className="mb-12 md:mb-18 border-t border-neutral-800 pt-12 md:pt-12">
           <Reveal>
             <SectionHeading
               title="MY APPROACH"
@@ -178,7 +178,7 @@ export const AboutPage: React.FC = () => {
         </section>
         
         {/* 6.3 EXPERIENCE*/}
-        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+        <section className="mb-12 md:mb-18 border-t border-neutral-800 pt-12 md:pt-12">
           <Reveal>
             <SectionHeading
               title="EXPERIENCE"
@@ -256,7 +256,7 @@ export const AboutPage: React.FC = () => {
         </section>
 
       {/* 6.3 EXPERIENCE*/}
-        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+        <section className="mb-8 md:mb-18 border-t border-neutral-800 pt-12 md:pt-12">
           <Reveal>
             <SectionHeading
               title="EDUCATION"
@@ -295,7 +295,7 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.4 SKILLS & STACK */}
-        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+        <section className="mb-8 md:mb-18 border-t border-neutral-800 pt-12 md:pt-12">
           <Reveal>
             <SectionHeading
               title="TECH STACK"
@@ -396,7 +396,7 @@ export const AboutPage: React.FC = () => {
         </section>
 
         {/* 6.5 CAPABILITIES */}
-        <section className="mb-28 md:mb-18 border-t border-neutral-800 pt-16 md:pt-12">
+        <section className="mb-8 md:mb-18 border-t border-neutral-800 pt-12 md:pt-12">
           <Reveal>
             <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-8 px-4">
               // 06 &bull; CAPABILITIES
@@ -405,7 +405,7 @@ export const AboutPage: React.FC = () => {
 
           <div className="space-y-6">
             {/* BARIS 1 (GANJIL) -> Bergerak ke KANAN */}
-            <div className="border-b border-neutral-800/80 pb-6 overflow-hidden flex whitespace-nowrap">
+            <div className="border-b border-neutral-800/80 pb-0 md:pb-6 overflow-hidden flex whitespace-nowrap">
               <div className="flex shrink-0 animate-marquee-right">
                 <span className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white uppercase tracking-tight hover:text-purple-300 transition-colors pr-8">
                   SOFTWARE ENGINEERING &bull;

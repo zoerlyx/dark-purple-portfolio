@@ -20,23 +20,23 @@ export const ContactPage: React.FC = () => {
     <div className="w-full pt-32 md:pt-40 pb-28 md:pb-36">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Page Header */}
-        <div className="border-b border-neutral-800/80 pb-12 mb-16 md:mb-24">
+        <div className="border-b border-neutral-800/80 pb-12 mb-8 md:mb-24">
           <Reveal>
             {/* Grid 2 Kolom (1:1 / grid-cols-2) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-end">
               
               {/* Kolom Kiri (Struktur & Teks Asli) */}
               <div>
-                <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center gap-2">
+                <div className="font-mono text-xs uppercase tracking-widest text-purple-400 mb-4 flex items-center justify-center md:justify-start gap-2">
                   <span className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
                   <span>04 // CONTACT</span>
                 </div>
-                <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6">
+                <h1 className="font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[0.88] uppercase mb-6 text-center md:text-left">
                   LET&apos;S
                   <br />
                   <span className="text-purple-400">TALK.</span>
                 </h1>
-                <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-xl leading-relaxed">
+                <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-xl leading-relaxed text-center md:text-left">
                   &ldquo;HAVE AN IDEA, PROJECT, OR OPPORTUNITY? LET&apos;S START A CONVERSATION.&rdquo;
                 </p>
               </div>

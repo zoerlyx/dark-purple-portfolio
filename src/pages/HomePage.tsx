@@ -31,7 +31,7 @@ return (
         <CyberHeroCard />
         {/* Small Bottom Metadata (Grid di Bawah) */}
         <Reveal delay={400}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-24 font-mono text-xs uppercase tracking-[0.2em] text-neutral-400 border-t border-neutral-800/60 pt-12">
+          <div className="hidden md:grid grid-cols-2 md:grid-cols-4 gap-24 font-mono text-xs uppercase tracking-[0.2em] text-neutral-400 border-t border-neutral-800/60 pt-12">
             <div>
               <span className="text-white font-bold">FARDHO Z</span>
               <div className="text-[10px] text-neutral-400">ENGINEER // BUILDER</div>
@@ -86,8 +86,8 @@ return (
   
   {/* GRUP ATAS: Judul & List Skill */}
   <div>
-    <span className="text-purple-400 font-semibold">// 01 &bull; INTRODUCTION</span>
-    <div className="mt-4 space-y-1.5 text-neutral-400 text-[12px]">
+    <span className="block text-center md:inline md:text-left text-purple-400 font-semibold">// 01 &bull; INTRODUCTION</span>
+    <div className="mt-4 pt-6 md:pt-0 space-y-1.5 text-neutral-400 text-[12px] text-center md:text-left">
       <div>BASED IN INDONESIA</div>
       <div>SOFTWARE ENGINEERING</div>
       <div>DATA ANALYTICS</div>
@@ -96,7 +96,7 @@ return (
   </div>
 
   {/* GRUP BAWAH: mt-auto memaksa div ini ke dasar/end kolom */}
-      <div className="mt-auto pb-8">
+      <div className="mt-auto pt-8 md:pt-0 pb-8 flex justify-center md:justify-start">
       <button
       type="button"
       onClick={() => {
@@ -140,7 +140,7 @@ return (
     </section>
 
     {/* 4.3 SELECTED WORK SECTION */}
-    <section className="py-24 md:py-12 border-b border-neutral-800/80">
+    <section className="py-12 md:py-12 border-b border-neutral-800/80">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <SectionHeading
@@ -185,7 +185,7 @@ return (
 
 
     {/* 4.5 WHAT I BUILD */}
-    <section className="py-24 md:py-12 border-b border-neutral-800/80">
+    <section className="py-12 md:py-12 border-b border-neutral-800/80">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <SectionHeading
@@ -197,8 +197,8 @@ return (
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-12">
           <Reveal delay={100}>
-            <div className="pt-6">
-              <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">01</div>
+            <div className="pt-0 md:pt-6">
+              <div className="font-mono text-lg md:text-[11px] text-purple-400 tracking-widest mb-3">01</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 SOFTWARE ENGINEERING
               </h3>
@@ -210,9 +210,9 @@ return (
 
           <Reveal delay={180}>
             <div className="pt-6">
-              <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">02</div>
+              <div className="font-mono text-lg md:text-[11px] text-purple-400 tracking-widest mb-3">02</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
-                DATA <br />ANALYTICS
+                DATA <br className="hidden md:inline" /> ANALYTICS
               </h3>
               <p className="text-neutral-400 text-sm leading-relaxed font-light text-justify">
                 Data cleaning, exploratory analysis, statistical analysis, data processing, and data visualization.
@@ -222,7 +222,7 @@ return (
 
           <Reveal delay={260}>
             <div className="pt-6">
-              <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">03</div>
+              <div className="font-mono text-lg md:text-[11px] text-purple-400 tracking-widest mb-3">03</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 BUSINESS INTELLIGENCE
               </h3>
@@ -234,7 +234,7 @@ return (
 
           <Reveal delay={340}>
             <div className="pt-6">
-              <div className="font-mono text-[11px] text-purple-400 tracking-widest mb-3">04</div>
+              <div className="font-mono text-lg md:text-[11px] text-purple-400 tracking-widest mb-3">04</div>
               <h3 className="font-display font-bold text-xl md:text-2xl text-white tracking-tight uppercase mb-3">
                 DATA ENGINEERING
               </h3>
@@ -251,17 +251,16 @@ return (
 <section className="relative py-24 md:py-36 bg-[#040405] text-center overflow-hidden">
   <div className="max-w-6xl mx-auto px-6 relative z-10">
     <Reveal>
-      <h2 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-tight leading-[0.95] uppercase mb-6">
-        LET&apos;S 
-        <br />
-        BUILD
-        <br />
-        <span className="text-purple-500 text-justify">SOMETHING</span><br/>
-        <span className="text-white-500">USEFUL</span>
-        <span className="text-purple-500"> .</span>
-      </h2>
+      <h2 className="font-display font-black text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tight leading-[1.05] sm:leading-[0.95] uppercase mb-6 md:mb-12 text-center">
+  LET&apos;S BUILD{" "}
+  <br className="hidden sm:inline" />
+  <span className="text-purple-500">SOMETHING</span>{" "}
+  <br className="hidden sm:inline" />
+  <span className="text-white">USEFUL</span>
+  <span className="text-purple-500">.</span>
+</h2>
 
-      <p className="font-mono text-xs sm:text-sm text-neutral-400 tracking-wider uppercase max-w-lg mx-auto mb-10 leading-normal">
+      <p className="font-mono text-xs sm:text-sm text-neutral-400 tracking-wider uppercase max-w-[260px] sm:max-w-lg mx-auto mb-24 md:mb-12 leading-normal">
         AVAILABLE FOR COLLABORATION, PROJECTS, AND NEW OPPORTUNITIES.
       </p>
 

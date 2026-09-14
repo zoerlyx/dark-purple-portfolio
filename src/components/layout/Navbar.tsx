@@ -30,22 +30,28 @@ export const Navbar: React.FC<NavbarProps> = ({
   useEffect(() => {
     if (!navRef.current || !lineRef.current) return;
 
-    const activeTab = navRef.current.querySelector<HTMLButtonElement>('[data-active="true"]');
+    const updateLinePosition = () => {
+      const activeTab = navRef.current?.querySelector<HTMLButtonElement>('[data-active="true"]');
 
-    if (activeTab) {
-      gsap.to(lineRef.current, {
-        x: activeTab.offsetLeft,
-        width: activeTab.offsetWidth,
-        opacity: 1,
-        duration: 0.4,
-        ease: 'power3.out',
-      });
-    } else {
-      gsap.to(lineRef.current, {
-        opacity: 0,
-        duration: 0.2,
-      });
-    }
+      if (activeTab && lineRef.current) {
+        gsap.to(lineRef.current, {
+          x: activeTab.offsetLeft,
+          width: activeTab.offsetWidth,
+          opacity: 1,
+          duration: 0.4,
+          ease: 'power3.out',
+        });
+      } else if (lineRef.current) {
+        gsap.to(lineRef.current, {
+          opacity: 0,
+          duration: 0.2,
+        });
+      }
+    };
+
+    // Minta frame animasi agar kalkulasi offsetWidth presisi setelah DOM merender layout
+    const timer = requestAnimationFrame(updateLinePosition);
+    return () => cancelAnimationFrame(timer);
   }, [currentPath]);
 
   const navLinks = [
@@ -58,8 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const handleLinkClick = (path: string) => {
     onNavigate(path);
     setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }; 
 
   return (
     <header

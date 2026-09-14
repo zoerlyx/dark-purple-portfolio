@@ -34,13 +34,13 @@ export const WorkPage: React.FC<WorkPageProps> = ({
               <br />
               <span className="text-purple-400">&amp; LIBRARY.</span>
             </h1>
-            <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-4xl pt-10 pb-12 leading-relaxed">
+            <p className="font-mono text-xs sm:text-sm text-neutral-400 uppercase tracking-widest max-w-4xl pt-10 pb-2 md:pb-12 leading-relaxed">
              SELECTED WORK AND PAST PROJECTS ACROSS SOFTWARE ENGINEERING, BUSINESS INTELLIGENCE, DATA ANALYTICS, AND DIGITAL PRODUCT DEVELOPMENT.</p>
           </Reveal>
         </div>
 
         {/* 5.1 SELECTED WORK SECTION */}
-        <section className="mb-28 md:mb-20 ">
+        <section className="mb-12 md:mb-20 ">
           <Reveal>
             <SectionHeading
               title="SELECTED WORK"
