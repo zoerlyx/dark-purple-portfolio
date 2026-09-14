@@ -406,9 +406,11 @@
     "featured": false,
     "description": "A full-stack web application for exploring lossless and lossy multimedia compression, as well as steganography, through interactive image, audio, and video processing.",
     "role": "Full-stack Developer",
-    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-8-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-8-a.jpg",
+      "/gallery-8-b.jpg",
+      "/gallery-8-c.jpg"
     ],
     "technologies": [
       "Next.js",
