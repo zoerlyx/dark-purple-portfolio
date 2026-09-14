@@ -773,9 +773,11 @@
     "featured": false,
     "description": "An IoT-based physics experiment device designed to measure motion characteristics such as speed, acceleration, and friction using embedded sensors and real-time measurements.",
     "role": "IoT Developer",
-    "image": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-15-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-15-a.jpg",
+      "/gallery-15-b.jpg",
+      "/gallery-15-c.jpg"
     ],
     "technologies": [
       "Arduino",
