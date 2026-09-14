@@ -82,6 +82,13 @@ export default function App() {
   useEffect(() => {
     const handlePopState = () => {
       setCurrentPath(window.location.pathname || '/');
+      
+      // Reset scroll ke atas saat tombol back/forward ditekan
+      if (lenisRef.current) {
+        lenisRef.current.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo(0, 0);
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -92,12 +99,14 @@ export default function App() {
       window.history.pushState({}, '', path);
       setCurrentPath(path);
 
-      // 2. Reset scroll ke paling atas (y: 0) secara instan saat navigasi halaman
-      if (lenisRef.current) {
-        lenisRef.current.scrollTo(0, { immediate: true });
-      } else {
-        window.scrollTo(0, 0);
-      }
+      // Beri jeda mikro 100ms agar AnimatePresence sempat memulai transisi sebelum scroll di-reset
+      setTimeout(() => {
+        if (lenisRef.current) {
+          lenisRef.current.scrollTo(0, { immediate: true });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }, 100);
     }
   };
 
