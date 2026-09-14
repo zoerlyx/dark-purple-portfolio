@@ -73,7 +73,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Navigation Links */}
-          <div className="md:col-span-3">
+          <div className="hidden md:block md:col-span-3">
             <div className="text-white uppercase tracking-widest text-[11px] font-bold mb-4">
               NAVIGATION
             </div>
@@ -97,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Channels */}
-          <div className="md:col-span-3">
+          <div className="hidden md:block md:col-span-3">
             <div className="text-white uppercase tracking-widest text-[11px] font-bold mb-4">
               CONTACT
             </div>
@@ -121,7 +121,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom copyright line */}
-        <div className="border-t border-neutral-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-400 uppercase tracking-widest">
+        <div className="border-t border-neutral-900 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] text-neutral-400 uppercase tracking-widest">
           <div>&copy; {currentYear} FARDHO Z. ALL RIGHTS RESERVED.</div>
           
           <div className="flex items-center gap-4">
@@ -131,7 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               type="button"
               onClick={scrollToTop}
               data-cursor="link"
-              className="group inline-flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors uppercase focus:outline-none cursor-pointer"
+              className="hidden sm:inline-flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors uppercase focus:outline-none cursor-pointer"
               aria-label="Scroll to top of page"
             >
               <span>BACK TO TOP</span>
