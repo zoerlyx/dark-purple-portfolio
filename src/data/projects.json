@@ -472,9 +472,11 @@
     "featured": false,
     "description": "A personal finance management web application that helps users track income, expenses, budgets, and financial activity through a structured and intuitive dashboard.",
     "role": "Full-stack Engineer",
-    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
+    "image": "/gallery-9-a.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop"
+      "/gallery-9-a.jpg",
+      "/gallery-9-b.jpg",
+      "/gallery-9-c.jpg"
     ],
     "technologies": [
       "Next.js",
