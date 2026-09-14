@@ -28,10 +28,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <article
       onClick={handleClick}
       data-cursor="view"
-      className="group cursor-pointer border-b border-neutral-800/60 pb-14 md:pb-20 pt-20 transition-colors duration-300 hover:border-purple-500/40"
+      className="group cursor-pointer border-b border-neutral-800/60 pb-14 md:pb-20 pt-8 md:pt-20 transition-colors duration-300 hover:border-purple-500/40"
     >
       <div
-        className={`grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-24 items-center ${
+        className={`grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-24 items-center ${
           variant === 'left-image' ? 'lg:flex-row-reverse' : ''
         }`}
       >
